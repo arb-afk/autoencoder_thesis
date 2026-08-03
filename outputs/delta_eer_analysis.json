@@ -1,0 +1,2623 @@
+{
+  "common_users": [
+    "118630",
+    "123597",
+    "132109",
+    "132522",
+    "140132",
+    "150191",
+    "160180",
+    "163748",
+    "172020",
+    "185546",
+    "198810",
+    "199679",
+    "200355",
+    "204416",
+    "25563",
+    "268386",
+    "271479",
+    "284695",
+    "315209",
+    "331516",
+    "353108",
+    "362153",
+    "372603",
+    "379016",
+    "403222",
+    "417934",
+    "418711",
+    "424559",
+    "435832",
+    "441582",
+    "459906",
+    "465234",
+    "472557",
+    "473072",
+    "547844",
+    "562519",
+    "58036",
+    "600436",
+    "624698",
+    "631580",
+    "64469",
+    "64562",
+    "656428",
+    "681745",
+    "708224",
+    "710535",
+    "714967",
+    "720396",
+    "720842",
+    "726027",
+    "728498",
+    "731275",
+    "733961",
+    "734871",
+    "740329",
+    "748081",
+    "748549",
+    "756382",
+    "76383",
+    "808884",
+    "817580",
+    "82889",
+    "836222",
+    "840180",
+    "84500",
+    "846718",
+    "850304",
+    "857069",
+    "861335",
+    "864651",
+    "867544",
+    "876061",
+    "917826",
+    "931304",
+    "936327",
+    "941227",
+    "955036",
+    "959726",
+    "95977",
+    "964401",
+    "966358"
+  ],
+  "n_common": 81,
+  "by_length": {
+    "25": {
+      "eer_delta": {
+        "label": "N=25",
+        "n": 81,
+        "mean_delta": 0.04255176811321966,
+        "median_delta": 0.011253994443521376,
+        "std_delta": 0.12634532314487362,
+        "pct_lstformer_better": 61.72839506172839,
+        "pct_transformer_better": 37.03703703703704,
+        "pct_tied": 1.2345679012345678,
+        "n_lstformer_better": 50,
+        "n_transformer_better": 30,
+        "top10pct_of_winners_share_of_positive_mass": 0.3250428124925514,
+        "top20pct_of_winners_share_of_positive_mass": 0.5818320176120236,
+        "ttest_mean_gt_0": {
+          "t": 3.031104780822396,
+          "p": 0.0032822436791912074,
+          "significant": true
+        },
+        "wilcoxon_delta_gt_0": {
+          "statistic": 2233.0,
+          "p": 0.0016404043486167952,
+          "significant": true
+        },
+        "quartiles": {
+          "q25": -0.007711750605542522,
+          "q50": 0.011253994443521376,
+          "q75": 0.07070645013249632
+        }
+      },
+      "mean_auc_delta_lstformer_minus_transformer": 0.0477354920593121,
+      "mean_recon_gap_delta_lstformer_minus_transformer": -7.499850939041387,
+      "per_user": [
+        {
+          "user": "118630",
+          "delta_eer": -0.04633777315628773,
+          "transformer_eer": 0.5238048516173666,
+          "lstformer_eer": 0.5701426247736543,
+          "transformer_auc": 0.40338175373269813,
+          "lstformer_auc": 0.41043461886652,
+          "transformer_recon_gap": -0.46353012323379517,
+          "lstformer_recon_gap": -0.1597403883934021
+        },
+        {
+          "user": "123597",
+          "delta_eer": 0.0034176421640619292,
+          "transformer_eer": 0.2510859004487151,
+          "lstformer_eer": 0.24766825828465316,
+          "transformer_auc": 0.7710354853050159,
+          "lstformer_auc": 0.7714928593058556,
+          "transformer_recon_gap": 8.747283885288198,
+          "lstformer_recon_gap": 1.4519960215257015
+        },
+        {
+          "user": "132109",
+          "delta_eer": -0.01816976117064517,
+          "transformer_eer": 0.5381059764178922,
+          "lstformer_eer": 0.5562757375885373,
+          "transformer_auc": 0.5029887116145013,
+          "lstformer_auc": 0.39921583730248034,
+          "transformer_recon_gap": 0.21896986104547977,
+          "lstformer_recon_gap": 0.2132925542537123
+        },
+        {
+          "user": "132522",
+          "delta_eer": -0.014326911243646961,
+          "transformer_eer": 0.0962369104538199,
+          "lstformer_eer": 0.11056382169746685,
+          "transformer_auc": 0.9054532505055812,
+          "lstformer_auc": 0.8916886318175389,
+          "transformer_recon_gap": 0.8191794314770959,
+          "lstformer_recon_gap": 0.8259556668635923
+        },
+        {
+          "user": "140132",
+          "delta_eer": 0.05589257240273243,
+          "transformer_eer": 0.36870515223952394,
+          "lstformer_eer": 0.3128125798367915,
+          "transformer_auc": 0.7906378103487843,
+          "lstformer_auc": 0.8409917429103206,
+          "transformer_recon_gap": 525.9495540116623,
+          "lstformer_recon_gap": 0.816290820017457
+        },
+        {
+          "user": "150191",
+          "delta_eer": 0.01308095226928982,
+          "transformer_eer": 0.15100010079345055,
+          "lstformer_eer": 0.13791914852416073,
+          "transformer_auc": 0.8876442712633523,
+          "lstformer_auc": 0.9216747132019755,
+          "transformer_recon_gap": -3.6660348176956177,
+          "lstformer_recon_gap": -3.6645612716674805
+        },
+        {
+          "user": "160180",
+          "delta_eer": -0.025875487323534396,
+          "transformer_eer": 0.6046204031256214,
+          "lstformer_eer": 0.6304958904491558,
+          "transformer_auc": 0.3952365752593372,
+          "lstformer_auc": 0.3114892783319061,
+          "transformer_recon_gap": 0.02141571044921875,
+          "lstformer_recon_gap": 0.014542609453201294
+        },
+        {
+          "user": "163748",
+          "delta_eer": -0.04367700413555142,
+          "transformer_eer": 0.577451096470827,
+          "lstformer_eer": 0.6211281006063785,
+          "transformer_auc": 0.3657433327037447,
+          "lstformer_auc": 0.31441344425368845,
+          "transformer_recon_gap": 0.7359618986956775,
+          "lstformer_recon_gap": 0.7770033171400428
+        },
+        {
+          "user": "172020",
+          "delta_eer": 0.03902944790050977,
+          "transformer_eer": 0.5856338636957477,
+          "lstformer_eer": 0.5466044157952379,
+          "transformer_auc": 0.3724468664698655,
+          "lstformer_auc": 0.41839910049645035,
+          "transformer_recon_gap": 0.3098196582868695,
+          "lstformer_recon_gap": 0.3326958315446973
+        },
+        {
+          "user": "185546",
+          "delta_eer": 0.015594475903847715,
+          "transformer_eer": 0.10704880383797302,
+          "lstformer_eer": 0.0914543279341253,
+          "transformer_auc": 0.9254336613092957,
+          "lstformer_auc": 0.9128105635053416,
+          "transformer_recon_gap": 3.890478193759918,
+          "lstformer_recon_gap": 0.8527037501335144
+        },
+        {
+          "user": "198810",
+          "delta_eer": -0.05590545503431177,
+          "transformer_eer": 0.5229412699285657,
+          "lstformer_eer": 0.5788467249628775,
+          "transformer_auc": 0.48513074636259756,
+          "lstformer_auc": 0.46916851515762586,
+          "transformer_recon_gap": 0.51467429054901,
+          "lstformer_recon_gap": 0.5051978188566864
+        },
+        {
+          "user": "199679",
+          "delta_eer": 0.0,
+          "transformer_eer": 0.0,
+          "lstformer_eer": 0.0,
+          "transformer_auc": 1.0,
+          "lstformer_auc": 1.0,
+          "transformer_recon_gap": 1.9167134608574372,
+          "lstformer_recon_gap": 8.944875486446264
+        },
+        {
+          "user": "200355",
+          "delta_eer": 0.08057988725019205,
+          "transformer_eer": 0.39220864933441546,
+          "lstformer_eer": 0.3116287620842234,
+          "transformer_auc": 0.7206825968871324,
+          "lstformer_auc": 0.8594764306466374,
+          "transformer_recon_gap": 1.512757028453052,
+          "lstformer_recon_gap": 1.5138051292160526
+        },
+        {
+          "user": "204416",
+          "delta_eer": 0.04112145480626639,
+          "transformer_eer": 0.38598439921241595,
+          "lstformer_eer": 0.34486294440614956,
+          "transformer_auc": 0.6979917611341289,
+          "lstformer_auc": 0.8371184925476893,
+          "transformer_recon_gap": 205.44524920545518,
+          "lstformer_recon_gap": 22.68187954183668
+        },
+        {
+          "user": "25563",
+          "delta_eer": 0.12469199994222746,
+          "transformer_eer": 0.39111963256640236,
+          "lstformer_eer": 0.2664276326241749,
+          "transformer_auc": 0.7390544554693781,
+          "lstformer_auc": 0.8649715229333063,
+          "transformer_recon_gap": -2.051304876804352,
+          "lstformer_recon_gap": -2.061094641685486
+        },
+        {
+          "user": "268386",
+          "delta_eer": -0.0014124719265895536,
+          "transformer_eer": 0.37769169422378657,
+          "lstformer_eer": 0.3791041661503761,
+          "transformer_auc": 0.7723693487233148,
+          "lstformer_auc": 0.7071194500653106,
+          "transformer_recon_gap": 1.1864509475126397,
+          "lstformer_recon_gap": 1.2032318180426955
+        },
+        {
+          "user": "271479",
+          "delta_eer": 0.23361878499435818,
+          "transformer_eer": 0.5487978049462001,
+          "lstformer_eer": 0.31517901995184194,
+          "transformer_auc": 0.4632585005657119,
+          "lstformer_auc": 0.7352040761794826,
+          "transformer_recon_gap": 0.04932064563035965,
+          "lstformer_recon_gap": 0.07083360850811005
+        },
+        {
+          "user": "284695",
+          "delta_eer": 0.0015500450778174607,
+          "transformer_eer": 0.07012497119832933,
+          "lstformer_eer": 0.06857492612051187,
+          "transformer_auc": 0.9821278233382982,
+          "lstformer_auc": 0.9833525433093555,
+          "transformer_recon_gap": -3.5416433811187744,
+          "lstformer_recon_gap": -3.542097806930542
+        },
+        {
+          "user": "315209",
+          "delta_eer": 0.02275262088569535,
+          "transformer_eer": 0.16561018855394732,
+          "lstformer_eer": 0.14285756766825197,
+          "transformer_auc": 0.8556730558980559,
+          "lstformer_auc": 0.8634973715219358,
+          "transformer_recon_gap": 6.666532580213243,
+          "lstformer_recon_gap": 0.7725312284728716
+        },
+        {
+          "user": "331516",
+          "delta_eer": 0.0002837684449489286,
+          "transformer_eer": 0.5624645289443814,
+          "lstformer_eer": 0.5621807604994324,
+          "transformer_auc": 0.40964930949678396,
+          "lstformer_auc": 0.4092354805145668,
+          "transformer_recon_gap": 0.08866299316287041,
+          "lstformer_recon_gap": -0.0009341388940811157
+        },
+        {
+          "user": "353108",
+          "delta_eer": -0.00847005666327183,
+          "transformer_eer": 0.42900295041001246,
+          "lstformer_eer": 0.4374730070732843,
+          "transformer_auc": 0.5897276733059642,
+          "lstformer_auc": 0.6017279322980649,
+          "transformer_recon_gap": 0.4212825964204967,
+          "lstformer_recon_gap": 0.4502701893215999
+        },
+        {
+          "user": "362153",
+          "delta_eer": -0.08607431324727255,
+          "transformer_eer": 0.4932706165315349,
+          "lstformer_eer": 0.5793449297788075,
+          "transformer_auc": 0.4348127802695251,
+          "lstformer_auc": 0.3273443951091888,
+          "transformer_recon_gap": 0.0718054547905922,
+          "lstformer_recon_gap": 0.05009955167770386
+        },
+        {
+          "user": "372603",
+          "delta_eer": 0.2030026358632886,
+          "transformer_eer": 0.5612205394878942,
+          "lstformer_eer": 0.3582179036246056,
+          "transformer_auc": 0.5234860060994536,
+          "lstformer_auc": 0.7122742304515195,
+          "transformer_recon_gap": 0.39376613683998585,
+          "lstformer_recon_gap": 0.41852847300469875
+        },
+        {
+          "user": "379016",
+          "delta_eer": -0.1770733217050124,
+          "transformer_eer": 0.2370506385688464,
+          "lstformer_eer": 0.4141239602738588,
+          "transformer_auc": 0.7830849707907653,
+          "lstformer_auc": 0.666711904394635,
+          "transformer_recon_gap": 0.3646872937679291,
+          "lstformer_recon_gap": 0.3582875933498144
+        },
+        {
+          "user": "403222",
+          "delta_eer": -0.010144437997605477,
+          "transformer_eer": 0.10417208221889668,
+          "lstformer_eer": 0.11431652021650215,
+          "transformer_auc": 0.9068064187300615,
+          "lstformer_auc": 0.9308310020835099,
+          "transformer_recon_gap": 21.85073733329773,
+          "lstformer_recon_gap": 1.3964292467571795
+        },
+        {
+          "user": "417934",
+          "delta_eer": -0.03381802743301665,
+          "transformer_eer": 0.5872659809206047,
+          "lstformer_eer": 0.6210840083536213,
+          "transformer_auc": 0.3555280161140116,
+          "lstformer_auc": 0.46555784769555425,
+          "transformer_recon_gap": 0.4218662790954113,
+          "lstformer_recon_gap": 0.4242709903046489
+        },
+        {
+          "user": "418711",
+          "delta_eer": 0.412155245853507,
+          "transformer_eer": 0.5080182401052207,
+          "lstformer_eer": 0.09586299425171368,
+          "transformer_auc": 0.6205766393115384,
+          "lstformer_auc": 0.9393063830937637,
+          "transformer_recon_gap": 0.2747709206305444,
+          "lstformer_recon_gap": 0.36137263709679246
+        },
+        {
+          "user": "424559",
+          "delta_eer": 0.030753628998974047,
+          "transformer_eer": 0.19668231076730774,
+          "lstformer_eer": 0.1659286817683337,
+          "transformer_auc": 0.8386230439960851,
+          "lstformer_auc": 0.8760185370800562,
+          "transformer_recon_gap": 0.6451391819864511,
+          "lstformer_recon_gap": 0.6040860642679036
+        },
+        {
+          "user": "435832",
+          "delta_eer": 0.014154508889926865,
+          "transformer_eer": 0.15666066629300257,
+          "lstformer_eer": 0.1425061574030757,
+          "transformer_auc": 0.8805866970839884,
+          "lstformer_auc": 0.8766914774589327,
+          "transformer_recon_gap": 5.300809737760574,
+          "lstformer_recon_gap": 143.32874136348255
+        },
+        {
+          "user": "441582",
+          "delta_eer": 0.0095967351541093,
+          "transformer_eer": 0.018991500890077187,
+          "lstformer_eer": 0.009394765735967887,
+          "transformer_auc": 0.9853520732470237,
+          "lstformer_auc": 0.9988653322070905,
+          "transformer_recon_gap": -3.149193048477173,
+          "lstformer_recon_gap": -3.0076804161071777
+        },
+        {
+          "user": "459906",
+          "delta_eer": 0.20350684079527703,
+          "transformer_eer": 0.5330762037637613,
+          "lstformer_eer": 0.32956936296848427,
+          "transformer_auc": 0.5175274350511672,
+          "lstformer_auc": 0.7083611556068401,
+          "transformer_recon_gap": 0.7996045686304569,
+          "lstformer_recon_gap": 0.8946892935782671
+        },
+        {
+          "user": "465234",
+          "delta_eer": -0.283438512234606,
+          "transformer_eer": 0.25515802646815583,
+          "lstformer_eer": 0.5385965387027618,
+          "transformer_auc": 0.7415962033597994,
+          "lstformer_auc": 0.49078039990116645,
+          "transformer_recon_gap": 1.0726585555821657,
+          "lstformer_recon_gap": 1.052008755505085
+        },
+        {
+          "user": "472557",
+          "delta_eer": -0.00023865589002736165,
+          "transformer_eer": 0.0009910802775024777,
+          "lstformer_eer": 0.0012297361675298393,
+          "transformer_auc": 0.9989993640258106,
+          "lstformer_auc": 0.9986491777023401,
+          "transformer_recon_gap": -3.7643449306488037,
+          "lstformer_recon_gap": -3.764474630355835
+        },
+        {
+          "user": "473072",
+          "delta_eer": 0.0188115884469382,
+          "transformer_eer": 0.5532673627927424,
+          "lstformer_eer": 0.5344557743458042,
+          "transformer_auc": 0.4045056690261194,
+          "lstformer_auc": 0.5448445150109176,
+          "transformer_recon_gap": 0.24813076830469072,
+          "lstformer_recon_gap": 0.28931644512340426
+        },
+        {
+          "user": "547844",
+          "delta_eer": -0.23412536724496585,
+          "transformer_eer": 0.3094460289888224,
+          "lstformer_eer": 0.5435713962337883,
+          "transformer_auc": 0.7200979796463488,
+          "lstformer_auc": 0.4179765963986761,
+          "transformer_recon_gap": 0.33544425782747567,
+          "lstformer_recon_gap": 0.40136669762432575
+        },
+        {
+          "user": "562519",
+          "delta_eer": 0.07070645013249632,
+          "transformer_eer": 0.7069597378692998,
+          "lstformer_eer": 0.6362532877368035,
+          "transformer_auc": 0.23392697646646632,
+          "lstformer_auc": 0.3012072717582792,
+          "transformer_recon_gap": 0.6910967417061329,
+          "lstformer_recon_gap": 0.6469777263700962
+        },
+        {
+          "user": "58036",
+          "delta_eer": 0.015966209978294454,
+          "transformer_eer": 0.3957457809043309,
+          "lstformer_eer": 0.3797795709260364,
+          "transformer_auc": 0.6150756154935758,
+          "lstformer_auc": 0.6348318769825037,
+          "transformer_recon_gap": 2.5637781154364347,
+          "lstformer_recon_gap": 2.5300387590250466
+        },
+        {
+          "user": "600436",
+          "delta_eer": 0.15526933692715705,
+          "transformer_eer": 0.6305983063318061,
+          "lstformer_eer": 0.4753289694046491,
+          "transformer_auc": 0.35267265299505,
+          "lstformer_auc": 0.6660732691916881,
+          "transformer_recon_gap": 1.9483100922079757,
+          "lstformer_recon_gap": 1.7252168325940147
+        },
+        {
+          "user": "624698",
+          "delta_eer": -0.08199795977182384,
+          "transformer_eer": 0.16034844463098247,
+          "lstformer_eer": 0.2423464044028063,
+          "transformer_auc": 0.9160525039493206,
+          "lstformer_auc": 0.7807718413758172,
+          "transformer_recon_gap": -4.248802423477173,
+          "lstformer_recon_gap": -4.177497506141663
+        },
+        {
+          "user": "631580",
+          "delta_eer": -0.007711750605542522,
+          "transformer_eer": 0.3139510788318063,
+          "lstformer_eer": 0.3216628294373488,
+          "transformer_auc": 0.6854999037904985,
+          "lstformer_auc": 0.7356557567673497,
+          "transformer_recon_gap": 2.8409630730748177,
+          "lstformer_recon_gap": 0.495158851146698
+        },
+        {
+          "user": "64469",
+          "delta_eer": 0.011253994443521376,
+          "transformer_eer": 0.4582247862224059,
+          "lstformer_eer": 0.44697079177888455,
+          "transformer_auc": 0.5206532533221019,
+          "lstformer_auc": 0.6230402593538564,
+          "transformer_recon_gap": 0.7775963782332838,
+          "lstformer_recon_gap": 0.8101352551020682
+        },
+        {
+          "user": "64562",
+          "delta_eer": 0.013104808305782645,
+          "transformer_eer": 0.4039796608858728,
+          "lstformer_eer": 0.39087485258009014,
+          "transformer_auc": 0.6150484955113457,
+          "lstformer_auc": 0.6866209101044667,
+          "transformer_recon_gap": 0.20153406402096152,
+          "lstformer_recon_gap": 0.2528593472670764
+        },
+        {
+          "user": "656428",
+          "delta_eer": 0.3110513184136925,
+          "transformer_eer": 0.588497140994467,
+          "lstformer_eer": 0.27744582258077455,
+          "transformer_auc": 0.40225957546165786,
+          "lstformer_auc": 0.7130728185633015,
+          "transformer_recon_gap": 0.8988815427292138,
+          "lstformer_recon_gap": 0.8902016484644264
+        },
+        {
+          "user": "681745",
+          "delta_eer": -0.02159271681751518,
+          "transformer_eer": 0.4962878847397816,
+          "lstformer_eer": 0.5178806015572968,
+          "transformer_auc": 0.6150943010217657,
+          "lstformer_auc": 0.43039097932476067,
+          "transformer_recon_gap": 0.20118794753216207,
+          "lstformer_recon_gap": 0.20301405107602477
+        },
+        {
+          "user": "708224",
+          "delta_eer": 0.30189223957398426,
+          "transformer_eer": 0.5314081852450188,
+          "lstformer_eer": 0.2295159456710345,
+          "transformer_auc": 0.604634117154311,
+          "lstformer_auc": 0.8112726619996411,
+          "transformer_recon_gap": -1.1890131384134293,
+          "lstformer_recon_gap": -1.2563236132264137
+        },
+        {
+          "user": "710535",
+          "delta_eer": -0.0009016139136492907,
+          "transformer_eer": 0.4196902885071772,
+          "lstformer_eer": 0.4205919024208265,
+          "transformer_auc": 0.5901670830676291,
+          "lstformer_auc": 0.5967252380452824,
+          "transformer_recon_gap": 16.53700840473175,
+          "lstformer_recon_gap": 0.13312184810638428
+        },
+        {
+          "user": "714967",
+          "delta_eer": -0.01046065508622207,
+          "transformer_eer": 0.5264478341448557,
+          "lstformer_eer": 0.5369084892310778,
+          "transformer_auc": 0.48704906647056423,
+          "lstformer_auc": 0.5100391090708531,
+          "transformer_recon_gap": 2.0973388701677322,
+          "lstformer_recon_gap": 2.195019700564444
+        },
+        {
+          "user": "720396",
+          "delta_eer": -0.005463622399106249,
+          "transformer_eer": 0.5691767909509846,
+          "lstformer_eer": 0.5746404133500909,
+          "transformer_auc": 0.5147421005192265,
+          "lstformer_auc": 0.5130822256921963,
+          "transformer_recon_gap": 0.39909482281655073,
+          "lstformer_recon_gap": 0.37876825919374824
+        },
+        {
+          "user": "720842",
+          "delta_eer": -0.04199473341182408,
+          "transformer_eer": 0.14854196451097468,
+          "lstformer_eer": 0.19053669792279876,
+          "transformer_auc": 0.9378459453673902,
+          "lstformer_auc": 0.9123237542144174,
+          "transformer_recon_gap": -1.5432000160217285,
+          "lstformer_recon_gap": -1.5244104862213135
+        },
+        {
+          "user": "726027",
+          "delta_eer": 0.22390634571318202,
+          "transformer_eer": 0.6485210752027164,
+          "lstformer_eer": 0.4246147294895344,
+          "transformer_auc": 0.29548638679211336,
+          "lstformer_auc": 0.6250781007286923,
+          "transformer_recon_gap": 0.46061223093420267,
+          "lstformer_recon_gap": 0.5129125386010855
+        },
+        {
+          "user": "728498",
+          "delta_eer": -0.0035731018990861063,
+          "transformer_eer": 0.5532681183852732,
+          "lstformer_eer": 0.5568412202843593,
+          "transformer_auc": 0.4332604992709296,
+          "lstformer_auc": 0.4121721919841662,
+          "transformer_recon_gap": 0.11899523809552193,
+          "lstformer_recon_gap": 0.021515607833862305
+        },
+        {
+          "user": "731275",
+          "delta_eer": -0.004490991464613403,
+          "transformer_eer": 0.37901200131603885,
+          "lstformer_eer": 0.38350299278065225,
+          "transformer_auc": 0.6505859641875137,
+          "lstformer_auc": 0.6158718626165003,
+          "transformer_recon_gap": 1.2614756561815739,
+          "lstformer_recon_gap": 1.3479220196604729
+        },
+        {
+          "user": "733961",
+          "delta_eer": 0.04535794886094757,
+          "transformer_eer": 0.6773136691002927,
+          "lstformer_eer": 0.6319557202393451,
+          "transformer_auc": 0.26690237682576934,
+          "lstformer_auc": 0.30219127210235386,
+          "transformer_recon_gap": 0.18579423846676946,
+          "lstformer_recon_gap": 0.1884939018636942
+        },
+        {
+          "user": "734871",
+          "delta_eer": -0.00025737433418382416,
+          "transformer_eer": 0.31029715270241215,
+          "lstformer_eer": 0.310554527036596,
+          "transformer_auc": 0.7066696678385178,
+          "lstformer_auc": 0.6939855121914351,
+          "transformer_recon_gap": -0.5703845024108887,
+          "lstformer_recon_gap": -0.5321907997131348
+        },
+        {
+          "user": "740329",
+          "delta_eer": 0.02029228346782963,
+          "transformer_eer": 0.5345231682429843,
+          "lstformer_eer": 0.5142308847751547,
+          "transformer_auc": 0.4577217117462422,
+          "lstformer_auc": 0.5513775082096278,
+          "transformer_recon_gap": -0.11156065762042999,
+          "lstformer_recon_gap": -0.06968224048614502
+        },
+        {
+          "user": "748081",
+          "delta_eer": 0.316686132271053,
+          "transformer_eer": 0.5506264660716786,
+          "lstformer_eer": 0.23394033380062562,
+          "transformer_auc": 0.4143162916761829,
+          "lstformer_auc": 0.7994853055296534,
+          "transformer_recon_gap": 0.5560418186942115,
+          "lstformer_recon_gap": 1.1549070258624852
+        },
+        {
+          "user": "748549",
+          "delta_eer": 0.01159583809138176,
+          "transformer_eer": 0.3672907103178755,
+          "lstformer_eer": 0.35569487222649376,
+          "transformer_auc": 0.7262952633848391,
+          "lstformer_auc": 0.6993421381873769,
+          "transformer_recon_gap": 1.9092494547367096,
+          "lstformer_recon_gap": 4.4055701196193695
+        },
+        {
+          "user": "756382",
+          "delta_eer": 0.0010615839963245,
+          "transformer_eer": 0.27609500203884574,
+          "lstformer_eer": 0.27503341804252124,
+          "transformer_auc": 0.7633961652010517,
+          "lstformer_auc": 0.7340080073298154,
+          "transformer_recon_gap": 1.1515492718062887,
+          "lstformer_recon_gap": 1.3649415176405455
+        },
+        {
+          "user": "76383",
+          "delta_eer": -0.018304897805462683,
+          "transformer_eer": 0.2786397940632782,
+          "lstformer_eer": 0.2969446918687409,
+          "transformer_auc": 0.7247744055008565,
+          "lstformer_auc": 0.7136387279800678,
+          "transformer_recon_gap": 0.5659292340278625,
+          "lstformer_recon_gap": -0.46385180950164795
+        },
+        {
+          "user": "808884",
+          "delta_eer": -0.004006753337137486,
+          "transformer_eer": 0.10949241005963808,
+          "lstformer_eer": 0.11349916339677557,
+          "transformer_auc": 0.9607463826286562,
+          "lstformer_auc": 0.952829171355883,
+          "transformer_recon_gap": 0.05457872152328491,
+          "lstformer_recon_gap": -0.01758253574371338
+        },
+        {
+          "user": "817580",
+          "delta_eer": 0.0034483595782839604,
+          "transformer_eer": 0.20298113725399022,
+          "lstformer_eer": 0.19953277767570626,
+          "transformer_auc": 0.7996776826398174,
+          "lstformer_auc": 0.8081588304895845,
+          "transformer_recon_gap": 0.9284518241183832,
+          "lstformer_recon_gap": 1.1534176101486082
+        },
+        {
+          "user": "82889",
+          "delta_eer": 0.09594344832664486,
+          "transformer_eer": 0.49913557779799816,
+          "lstformer_eer": 0.4031921294713533,
+          "transformer_auc": 0.6023590862949502,
+          "lstformer_auc": 0.6418290511079437,
+          "transformer_recon_gap": 0.49502459447830915,
+          "lstformer_recon_gap": 0.5656780041754246
+        },
+        {
+          "user": "836222",
+          "delta_eer": 0.011751964559077822,
+          "transformer_eer": 0.014381894553622756,
+          "lstformer_eer": 0.002629929994544934,
+          "transformer_auc": 0.9725755906075133,
+          "lstformer_auc": 0.9974491828361031,
+          "transformer_recon_gap": -3.668811082839966,
+          "lstformer_recon_gap": -3.456509828567505
+        },
+        {
+          "user": "840180",
+          "delta_eer": -0.21972943903720876,
+          "transformer_eer": 0.008565794673522021,
+          "lstformer_eer": 0.2282952337107308,
+          "transformer_auc": 0.9920027968694617,
+          "lstformer_auc": 0.8030516534733738,
+          "transformer_recon_gap": 0.9634909745745972,
+          "lstformer_recon_gap": 0.9640636679469026
+        },
+        {
+          "user": "84500",
+          "delta_eer": 0.0026015411945264633,
+          "transformer_eer": 0.10647693780572462,
+          "lstformer_eer": 0.10387539661119816,
+          "transformer_auc": 0.8944651539381829,
+          "lstformer_auc": 0.9020881856523087,
+          "transformer_recon_gap": 1.8575267383603205,
+          "lstformer_recon_gap": 1.9637566524652357
+        },
+        {
+          "user": "846718",
+          "delta_eer": 0.2950630781159258,
+          "transformer_eer": 0.5390295704908514,
+          "lstformer_eer": 0.24396649237492563,
+          "transformer_auc": 0.5549456533234154,
+          "lstformer_auc": 0.768935438980379,
+          "transformer_recon_gap": 0.7527790188323706,
+          "lstformer_recon_gap": 0.8472018223255873
+        },
+        {
+          "user": "850304",
+          "delta_eer": -0.15894093421277772,
+          "transformer_eer": 0.4431198334046566,
+          "lstformer_eer": 0.6020607676174343,
+          "transformer_auc": 0.5893691193442361,
+          "lstformer_auc": 0.3494337513275897,
+          "transformer_recon_gap": 0.7253866847604513,
+          "lstformer_recon_gap": 0.943484578281641
+        },
+        {
+          "user": "857069",
+          "delta_eer": 0.2524534582156367,
+          "transformer_eer": 0.538235211523531,
+          "lstformer_eer": 0.28578175330789435,
+          "transformer_auc": 0.4479249054297372,
+          "lstformer_auc": 0.7632156367180402,
+          "transformer_recon_gap": 0.08849979750812054,
+          "lstformer_recon_gap": 0.06924240384250879
+        },
+        {
+          "user": "861335",
+          "delta_eer": 0.2968664387273519,
+          "transformer_eer": 0.29940920340603894,
+          "lstformer_eer": 0.002542764678687009,
+          "transformer_auc": 0.70954732751216,
+          "lstformer_auc": 0.9952609895174195,
+          "transformer_recon_gap": 0.9064823505468667,
+          "lstformer_recon_gap": 1.148912413045764
+        },
+        {
+          "user": "864651",
+          "delta_eer": 0.1624614232403187,
+          "transformer_eer": 0.4281628359117102,
+          "lstformer_eer": 0.2657014126713915,
+          "transformer_auc": 0.6467692074705135,
+          "lstformer_auc": 0.856727858279004,
+          "transformer_recon_gap": 0.900384932756424,
+          "lstformer_recon_gap": 0.9018275141716003
+        },
+        {
+          "user": "867544",
+          "delta_eer": 0.010628933116459849,
+          "transformer_eer": 0.2957779727202393,
+          "lstformer_eer": 0.28514903960377946,
+          "transformer_auc": 0.7018290747204978,
+          "lstformer_auc": 0.7174177028061561,
+          "transformer_recon_gap": 2.382885176455602,
+          "lstformer_recon_gap": 4.002327530644834
+        },
+        {
+          "user": "876061",
+          "delta_eer": 0.20850022542513408,
+          "transformer_eer": 0.6163447066364847,
+          "lstformer_eer": 0.4078444812113506,
+          "transformer_auc": 0.3401239934014606,
+          "lstformer_auc": 0.5626145083929722,
+          "transformer_recon_gap": -0.35395100712776184,
+          "lstformer_recon_gap": -0.4531961679458618
+        },
+        {
+          "user": "917826",
+          "delta_eer": 0.3061654600436073,
+          "transformer_eer": 0.6653210827397995,
+          "lstformer_eer": 0.3591556226961922,
+          "transformer_auc": 0.29104814562870607,
+          "lstformer_auc": 0.5899590517724341,
+          "transformer_recon_gap": 0.38396917935460806,
+          "lstformer_recon_gap": 0.3805818110704422
+        },
+        {
+          "user": "931304",
+          "delta_eer": 0.10104128412290364,
+          "transformer_eer": 0.2166959650183981,
+          "lstformer_eer": 0.11565468089549447,
+          "transformer_auc": 0.91460768111872,
+          "lstformer_auc": 0.9502630100883541,
+          "transformer_recon_gap": -3.7822210788726807,
+          "lstformer_recon_gap": -3.7522000670433044
+        },
+        {
+          "user": "936327",
+          "delta_eer": 0.03141118207237259,
+          "transformer_eer": 0.24453804388580963,
+          "lstformer_eer": 0.21312686181343704,
+          "transformer_auc": 0.7533542000756681,
+          "lstformer_auc": 0.7634465836581205,
+          "transformer_recon_gap": 0.6769476514309645,
+          "lstformer_recon_gap": 1.3283048272132874
+        },
+        {
+          "user": "941227",
+          "delta_eer": 0.04240717433342456,
+          "transformer_eer": 0.6583281531678556,
+          "lstformer_eer": 0.6159209788344311,
+          "transformer_auc": 0.3020720699557254,
+          "lstformer_auc": 0.45172037304871326,
+          "transformer_recon_gap": 0.3866950925439596,
+          "lstformer_recon_gap": 0.34992268960922956
+        },
+        {
+          "user": "955036",
+          "delta_eer": 0.018512542470763685,
+          "transformer_eer": 0.05624546605996464,
+          "lstformer_eer": 0.03773292358920095,
+          "transformer_auc": 0.9738612695177585,
+          "lstformer_auc": 0.9688835542951988,
+          "transformer_recon_gap": 2.5233824397364515,
+          "lstformer_recon_gap": 2.5619317602104275
+        },
+        {
+          "user": "959726",
+          "delta_eer": 0.13726810603235115,
+          "transformer_eer": 0.242382846802473,
+          "lstformer_eer": 0.10511474077012184,
+          "transformer_auc": 0.8441785882020953,
+          "lstformer_auc": 0.9717260979751398,
+          "transformer_recon_gap": -3.2180981636047363,
+          "lstformer_recon_gap": -3.2053191661834717
+        },
+        {
+          "user": "95977",
+          "delta_eer": 0.007002452721126429,
+          "transformer_eer": 0.3068037474598534,
+          "lstformer_eer": 0.29980129473872696,
+          "transformer_auc": 0.6956177288114818,
+          "lstformer_auc": 0.7124145423169503,
+          "transformer_recon_gap": 1.4419348197989166,
+          "lstformer_recon_gap": 5.907117617083713
+        },
+        {
+          "user": "964401",
+          "delta_eer": -0.004741417752471014,
+          "transformer_eer": 0.11570537262214119,
+          "lstformer_eer": 0.1204467903746122,
+          "transformer_auc": 0.9136448376690467,
+          "lstformer_auc": 0.9319793962948065,
+          "transformer_recon_gap": 0.8899338133633137,
+          "lstformer_recon_gap": 0.9285341370850801
+        },
+        {
+          "user": "966358",
+          "delta_eer": 0.06468233691023675,
+          "transformer_eer": 0.24032160805987737,
+          "lstformer_eer": 0.17563927114964062,
+          "transformer_auc": 0.8244649817826567,
+          "lstformer_auc": 0.8697822141560798,
+          "transformer_recon_gap": 0.13692569732666016,
+          "lstformer_recon_gap": 0.155389241874218
+        }
+      ]
+    },
+    "50": {
+      "eer_delta": {
+        "label": "N=50",
+        "n": 81,
+        "mean_delta": 0.034223153315030376,
+        "median_delta": 0.010236599895218246,
+        "std_delta": 0.12264782757057206,
+        "pct_lstformer_better": 65.4320987654321,
+        "pct_transformer_better": 32.098765432098766,
+        "pct_tied": 2.4691358024691357,
+        "n_lstformer_better": 53,
+        "n_transformer_better": 26,
+        "top10pct_of_winners_share_of_positive_mass": 0.39856538123157953,
+        "top20pct_of_winners_share_of_positive_mass": 0.6446216173359541,
+        "ttest_mean_gt_0": {
+          "t": 2.511323567129993,
+          "p": 0.01404157354711465,
+          "significant": true
+        },
+        "wilcoxon_delta_gt_0": {
+          "statistic": 2216.0,
+          "p": 0.0009412288940161516,
+          "significant": true
+        },
+        "quartiles": {
+          "q25": -0.005224482812508455,
+          "q50": 0.010236599895218246,
+          "q75": 0.0655112847628406
+        }
+      },
+      "mean_auc_delta_lstformer_minus_transformer": 0.037283115740867755,
+      "mean_recon_gap_delta_lstformer_minus_transformer": 3.813981598991362,
+      "per_user": [
+        {
+          "user": "118630",
+          "delta_eer": 0.03070924210026127,
+          "transformer_eer": 0.5366538370159182,
+          "lstformer_eer": 0.5059445949156569,
+          "transformer_auc": 0.36409473033974815,
+          "lstformer_auc": 0.5522660204324068,
+          "transformer_recon_gap": -0.5471172630786896,
+          "lstformer_recon_gap": -0.6871337294578552
+        },
+        {
+          "user": "123597",
+          "delta_eer": 0.0018268048303871631,
+          "transformer_eer": 0.2661585001150898,
+          "lstformer_eer": 0.26433169528470263,
+          "transformer_auc": 0.748284252511288,
+          "lstformer_auc": 0.7554136893222112,
+          "transformer_recon_gap": 1.2724885620336863,
+          "lstformer_recon_gap": 1.316754509047314
+        },
+        {
+          "user": "132109",
+          "delta_eer": 0.04125492278122023,
+          "transformer_eer": 0.5331516552641837,
+          "lstformer_eer": 0.4918967324829635,
+          "transformer_auc": 0.40358942996545655,
+          "lstformer_auc": 0.6473702603529617,
+          "transformer_recon_gap": 1.4073673095554113,
+          "lstformer_recon_gap": 1.3562069963663816
+        },
+        {
+          "user": "132522",
+          "delta_eer": -0.030697346703871073,
+          "transformer_eer": 0.07436291036520842,
+          "lstformer_eer": 0.1050602570690795,
+          "transformer_auc": 0.9470009141016591,
+          "lstformer_auc": 0.9025280073704449,
+          "transformer_recon_gap": 1.2810244833399338,
+          "lstformer_recon_gap": 1.3437273507697682
+        },
+        {
+          "user": "140132",
+          "delta_eer": 0.2126983262004583,
+          "transformer_eer": 0.3335583889485494,
+          "lstformer_eer": 0.12086006274809108,
+          "transformer_auc": 0.8114273568510446,
+          "lstformer_auc": 0.9342064723409371,
+          "transformer_recon_gap": 3.63627324369736,
+          "lstformer_recon_gap": 0.9957872509257868
+        },
+        {
+          "user": "150191",
+          "delta_eer": 0.0,
+          "transformer_eer": 0.1503171810117577,
+          "lstformer_eer": 0.1503171810117577,
+          "transformer_auc": 0.9076449288075314,
+          "lstformer_auc": 0.8948941300454973,
+          "transformer_recon_gap": -3.95689594745636,
+          "lstformer_recon_gap": -3.957010865211487
+        },
+        {
+          "user": "160180",
+          "delta_eer": 0.021839157057483516,
+          "transformer_eer": 0.6174759981065046,
+          "lstformer_eer": 0.595636841049021,
+          "transformer_auc": 0.35519428882342335,
+          "lstformer_auc": 0.35211033721887997,
+          "transformer_recon_gap": 0.16676759719848633,
+          "lstformer_recon_gap": 0.19643396139144897
+        },
+        {
+          "user": "163748",
+          "delta_eer": 0.35748563521543497,
+          "transformer_eer": 0.6057768269405339,
+          "lstformer_eer": 0.24829119172509898,
+          "transformer_auc": 0.40436316530665317,
+          "lstformer_auc": 0.7947626805105081,
+          "transformer_recon_gap": 0.4772359188646078,
+          "lstformer_recon_gap": 0.49263605661690235
+        },
+        {
+          "user": "172020",
+          "delta_eer": 0.011431154740377147,
+          "transformer_eer": 0.5462885919749119,
+          "lstformer_eer": 0.5348574372345347,
+          "transformer_auc": 0.44502201822736753,
+          "lstformer_auc": 0.5494779307071666,
+          "transformer_recon_gap": 0.2999577899463475,
+          "lstformer_recon_gap": 0.28794205840677023
+        },
+        {
+          "user": "185546",
+          "delta_eer": -0.07937335799843213,
+          "transformer_eer": 0.0839796767394106,
+          "lstformer_eer": 0.16335303473784274,
+          "transformer_auc": 0.9217890492678029,
+          "lstformer_auc": 0.8470478916325151,
+          "transformer_recon_gap": 13.954854965209961,
+          "lstformer_recon_gap": 0.9902328923344612
+        },
+        {
+          "user": "198810",
+          "delta_eer": -0.005049814281021137,
+          "transformer_eer": 0.5390825522185603,
+          "lstformer_eer": 0.5441323664995814,
+          "transformer_auc": 0.42606099583523205,
+          "lstformer_auc": 0.4917853130994139,
+          "transformer_recon_gap": 0.2686835820786655,
+          "lstformer_recon_gap": 0.2685468220151961
+        },
+        {
+          "user": "199679",
+          "delta_eer": 0.0,
+          "transformer_eer": 0.0,
+          "lstformer_eer": 0.0,
+          "transformer_auc": 1.0,
+          "lstformer_auc": 1.0,
+          "transformer_recon_gap": 63.24889348041509,
+          "lstformer_recon_gap": 1.4204574280402085
+        },
+        {
+          "user": "200355",
+          "delta_eer": 0.08984883093810475,
+          "transformer_eer": 0.375582944703531,
+          "lstformer_eer": 0.28573411376542623,
+          "transformer_auc": 0.7572918130165679,
+          "lstformer_auc": 0.8720225820730247,
+          "transformer_recon_gap": 1.042990157729946,
+          "lstformer_recon_gap": 1.0497688049217686
+        },
+        {
+          "user": "204416",
+          "delta_eer": -0.26977374764270606,
+          "transformer_eer": 0.09307482074993056,
+          "lstformer_eer": 0.36284856839263663,
+          "transformer_auc": 0.9494576495452404,
+          "lstformer_auc": 0.6808620170671806,
+          "transformer_recon_gap": 11.55863535311073,
+          "lstformer_recon_gap": 46.21759252017364
+        },
+        {
+          "user": "25563",
+          "delta_eer": 0.06691677697861032,
+          "transformer_eer": 0.3772915943137758,
+          "lstformer_eer": 0.3103748173351655,
+          "transformer_auc": 0.7832600996246877,
+          "lstformer_auc": 0.8403459013450507,
+          "transformer_recon_gap": -2.18908429145813,
+          "lstformer_recon_gap": -2.1331496834754944
+        },
+        {
+          "user": "268386",
+          "delta_eer": 0.0018237798434478925,
+          "transformer_eer": 0.3832146785426019,
+          "lstformer_eer": 0.381390898699154,
+          "transformer_auc": 0.6381250710427782,
+          "lstformer_auc": 0.617438830692369,
+          "transformer_recon_gap": 0.9824920067912899,
+          "lstformer_recon_gap": 1.0028835227130912
+        },
+        {
+          "user": "271479",
+          "delta_eer": 0.314428835208974,
+          "transformer_eer": 0.5277464895735959,
+          "lstformer_eer": 0.2133176543646219,
+          "transformer_auc": 0.5126263043327465,
+          "lstformer_auc": 0.8250881116201637,
+          "transformer_recon_gap": 0.0794449020177126,
+          "lstformer_recon_gap": 0.058978546410799026
+        },
+        {
+          "user": "284695",
+          "delta_eer": 0.005681645559499814,
+          "transformer_eer": 0.06480418996159426,
+          "lstformer_eer": 0.05912254440209445,
+          "transformer_auc": 0.9838530718777527,
+          "lstformer_auc": 0.9879678337389048,
+          "transformer_recon_gap": -3.8149518966674805,
+          "lstformer_recon_gap": -3.8151038885116577
+        },
+        {
+          "user": "315209",
+          "delta_eer": 0.026237214548376103,
+          "transformer_eer": 0.10291612589227772,
+          "lstformer_eer": 0.07667891134390162,
+          "transformer_auc": 0.8732900769003255,
+          "lstformer_auc": 0.9285220415226442,
+          "transformer_recon_gap": 0.510836131801625,
+          "lstformer_recon_gap": 0.6147158205239975
+        },
+        {
+          "user": "331516",
+          "delta_eer": -0.005399568034557212,
+          "transformer_eer": 0.53847779134191,
+          "lstformer_eer": 0.5438773593764672,
+          "transformer_auc": 0.43597990421635835,
+          "lstformer_auc": 0.41881866841956994,
+          "transformer_recon_gap": 0.005653440952301025,
+          "lstformer_recon_gap": -0.005138926208019257
+        },
+        {
+          "user": "353108",
+          "delta_eer": 0.016289508937534003,
+          "transformer_eer": 0.43711604375869206,
+          "lstformer_eer": 0.42082653482115806,
+          "transformer_auc": 0.7109579848905729,
+          "lstformer_auc": 0.5783962750845327,
+          "transformer_recon_gap": 0.6037684547482058,
+          "lstformer_recon_gap": 0.6143786138854921
+        },
+        {
+          "user": "362153",
+          "delta_eer": 0.23343933867331423,
+          "transformer_eer": 0.6114000036658908,
+          "lstformer_eer": 0.3779606649925765,
+          "transformer_auc": 0.3067672342687464,
+          "lstformer_auc": 0.616830104294591,
+          "transformer_recon_gap": 0.07607515156269073,
+          "lstformer_recon_gap": 0.12179642170667648
+        },
+        {
+          "user": "372603",
+          "delta_eer": 0.0036690274517331423,
+          "transformer_eer": 0.5384490632926009,
+          "lstformer_eer": 0.5347800358408678,
+          "transformer_auc": 0.4787994518547298,
+          "lstformer_auc": 0.5399337209202537,
+          "transformer_recon_gap": 0.4202419202774763,
+          "lstformer_recon_gap": 0.44413505494594574
+        },
+        {
+          "user": "379016",
+          "delta_eer": -0.01281152715261158,
+          "transformer_eer": 0.22602997629888177,
+          "lstformer_eer": 0.23884150345149335,
+          "transformer_auc": 0.7750766038572634,
+          "lstformer_auc": 0.7910651391972723,
+          "transformer_recon_gap": 0.6700380286201835,
+          "lstformer_recon_gap": 0.6762568056583405
+        },
+        {
+          "user": "403222",
+          "delta_eer": -0.032701847266852796,
+          "transformer_eer": 0.14714635024320008,
+          "lstformer_eer": 0.17984819751005288,
+          "transformer_auc": 0.883901165955504,
+          "lstformer_auc": 0.8326656965003774,
+          "transformer_recon_gap": 1.0920542269013822,
+          "lstformer_recon_gap": 1.1172758950851858
+        },
+        {
+          "user": "417934",
+          "delta_eer": 0.1349760662672822,
+          "transformer_eer": 0.593263057561014,
+          "lstformer_eer": 0.45828699129373185,
+          "transformer_auc": 0.40549179060782103,
+          "lstformer_auc": 0.5747753858368143,
+          "transformer_recon_gap": 0.507936630398035,
+          "lstformer_recon_gap": 0.5162648893892765
+        },
+        {
+          "user": "418711",
+          "delta_eer": 0.2010996121561131,
+          "transformer_eer": 0.4590942485994527,
+          "lstformer_eer": 0.2579946364433396,
+          "transformer_auc": 0.661739510863912,
+          "lstformer_auc": 0.8839226165345445,
+          "transformer_recon_gap": 0.5451976615004241,
+          "lstformer_recon_gap": 0.5952310748398304
+        },
+        {
+          "user": "424559",
+          "delta_eer": -0.06257461454443858,
+          "transformer_eer": 0.15245497726637708,
+          "lstformer_eer": 0.21502959181081566,
+          "transformer_auc": 0.9010769895095125,
+          "lstformer_auc": 0.8367370265945288,
+          "transformer_recon_gap": 0.038890684489160776,
+          "lstformer_recon_gap": 0.05473747057840228
+        },
+        {
+          "user": "435832",
+          "delta_eer": 0.042018918308717235,
+          "transformer_eer": 0.18216727869998883,
+          "lstformer_eer": 0.1401483603912716,
+          "transformer_auc": 0.8460795191803134,
+          "lstformer_auc": 0.8831663462720446,
+          "transformer_recon_gap": 4.35825286788895,
+          "lstformer_recon_gap": 6.792666114575695
+        },
+        {
+          "user": "441582",
+          "delta_eer": -0.005224482812508455,
+          "transformer_eer": 0.014691344552758768,
+          "lstformer_eer": 0.019915827365267223,
+          "transformer_auc": 0.9850483552566582,
+          "lstformer_auc": 0.9814922590275419,
+          "transformer_recon_gap": -3.5275022983551025,
+          "lstformer_recon_gap": -3.7586095333099365
+        },
+        {
+          "user": "459906",
+          "delta_eer": 0.025017628532934877,
+          "transformer_eer": 0.5065713215487562,
+          "lstformer_eer": 0.4815536930158213,
+          "transformer_auc": 0.44970409094165276,
+          "lstformer_auc": 0.606027749943252,
+          "transformer_recon_gap": 0.6779172029346228,
+          "lstformer_recon_gap": 0.702366691082716
+        },
+        {
+          "user": "465234",
+          "delta_eer": 0.02084116389556001,
+          "transformer_eer": 0.521508024678735,
+          "lstformer_eer": 0.500666860783175,
+          "transformer_auc": 0.4777396079654847,
+          "lstformer_auc": 0.6390202050673819,
+          "transformer_recon_gap": 1.0215615667402744,
+          "lstformer_recon_gap": 0.93717454187572
+        },
+        {
+          "user": "472557",
+          "delta_eer": 0.0004981071926678515,
+          "transformer_eer": 0.001530098936733899,
+          "lstformer_eer": 0.0010319917440660474,
+          "transformer_auc": 0.9979240221866231,
+          "lstformer_auc": 0.9979361535898706,
+          "transformer_recon_gap": -3.9526957273483276,
+          "lstformer_recon_gap": -3.9511932134628296
+        },
+        {
+          "user": "473072",
+          "delta_eer": -0.018826653272884464,
+          "transformer_eer": 0.5235563492414006,
+          "lstformer_eer": 0.5423830025142851,
+          "transformer_auc": 0.43919092726649156,
+          "lstformer_auc": 0.46196516673012944,
+          "transformer_recon_gap": 0.5087636602111161,
+          "lstformer_recon_gap": 0.5710791791789234
+        },
+        {
+          "user": "547844",
+          "delta_eer": 0.03770863163293664,
+          "transformer_eer": 0.5319438804949459,
+          "lstformer_eer": 0.49423524886200926,
+          "transformer_auc": 0.44457504327570363,
+          "lstformer_auc": 0.598679289637339,
+          "transformer_recon_gap": 0.09971979539841413,
+          "lstformer_recon_gap": 0.08346919063478708
+        },
+        {
+          "user": "562519",
+          "delta_eer": 0.06968847158955915,
+          "transformer_eer": 0.6587118981954903,
+          "lstformer_eer": 0.5890234266059311,
+          "transformer_auc": 0.3593758069680725,
+          "lstformer_auc": 0.3485452194781004,
+          "transformer_recon_gap": 0.7102817930281162,
+          "lstformer_recon_gap": 0.8060968965291977
+        },
+        {
+          "user": "58036",
+          "delta_eer": 0.010236599895218246,
+          "transformer_eer": 0.4031148330929389,
+          "lstformer_eer": 0.39287823319772064,
+          "transformer_auc": 0.6162714980563622,
+          "lstformer_auc": 0.6142449889073587,
+          "transformer_recon_gap": 107.27649566845503,
+          "lstformer_recon_gap": 465.69757901801495
+        },
+        {
+          "user": "600436",
+          "delta_eer": -0.036251888961409406,
+          "transformer_eer": 0.5296405240287652,
+          "lstformer_eer": 0.5658924129901746,
+          "transformer_auc": 0.47037172604522526,
+          "lstformer_auc": 0.4256623860008114,
+          "transformer_recon_gap": 1.2006760430522263,
+          "lstformer_recon_gap": 0.5635719012934715
+        },
+        {
+          "user": "624698",
+          "delta_eer": 0.005734740270615962,
+          "transformer_eer": 0.2403579602497209,
+          "lstformer_eer": 0.23462321997910493,
+          "transformer_auc": 0.7777454637838127,
+          "lstformer_auc": 0.7879736871960354,
+          "transformer_recon_gap": -3.922008752822876,
+          "lstformer_recon_gap": -3.9239466190338135
+        },
+        {
+          "user": "631580",
+          "delta_eer": 0.0011778095862904903,
+          "transformer_eer": 0.3201508916323731,
+          "lstformer_eer": 0.3189730820460826,
+          "transformer_auc": 0.6864165722351444,
+          "lstformer_auc": 0.6824429931810501,
+          "transformer_recon_gap": 7.725068509578705,
+          "lstformer_recon_gap": 0.41370123624801636
+        },
+        {
+          "user": "64469",
+          "delta_eer": -0.02025061272972134,
+          "transformer_eer": 0.42158147004943664,
+          "lstformer_eer": 0.441832082779158,
+          "transformer_auc": 0.6255665135887977,
+          "lstformer_auc": 0.5583636561352439,
+          "transformer_recon_gap": 0.15171931823715568,
+          "lstformer_recon_gap": 0.22016730485484004
+        },
+        {
+          "user": "64562",
+          "delta_eer": 0.013858330277472242,
+          "transformer_eer": 0.3810506050605061,
+          "lstformer_eer": 0.36719227478303385,
+          "transformer_auc": 0.6181769411509053,
+          "lstformer_auc": 0.6787961717982498,
+          "transformer_recon_gap": 0.41775343008339405,
+          "lstformer_recon_gap": 0.41165307350456715
+        },
+        {
+          "user": "656428",
+          "delta_eer": -0.29171759583492995,
+          "transformer_eer": 0.26470724262325407,
+          "lstformer_eer": 0.556424838458184,
+          "transformer_auc": 0.7722169549532882,
+          "lstformer_auc": 0.40337470433553124,
+          "transformer_recon_gap": 0.07668871432542801,
+          "lstformer_recon_gap": 0.08421642892062664
+        },
+        {
+          "user": "681745",
+          "delta_eer": 0.015061260373610108,
+          "transformer_eer": 0.511641273350636,
+          "lstformer_eer": 0.4965800129770259,
+          "transformer_auc": 0.5937655203627159,
+          "lstformer_auc": 0.47357833477522504,
+          "transformer_recon_gap": 1.2080274410545826,
+          "lstformer_recon_gap": 1.0605731322430074
+        },
+        {
+          "user": "708224",
+          "delta_eer": 0.2475530337223547,
+          "transformer_eer": 0.5234831388226191,
+          "lstformer_eer": 0.2759301051002644,
+          "transformer_auc": 0.5048810368173319,
+          "lstformer_auc": 0.7353665613514734,
+          "transformer_recon_gap": -1.1013284027576447,
+          "lstformer_recon_gap": -1.2766337841749191
+        },
+        {
+          "user": "710535",
+          "delta_eer": -0.3182254527795792,
+          "transformer_eer": 0.08488250372171184,
+          "lstformer_eer": 0.40310795650129105,
+          "transformer_auc": 0.955085240736034,
+          "lstformer_auc": 0.6709680545694972,
+          "transformer_recon_gap": 0.3882659077644348,
+          "lstformer_recon_gap": 1.1082673072814941
+        },
+        {
+          "user": "714967",
+          "delta_eer": 0.09806677587441659,
+          "transformer_eer": 0.3177554514697772,
+          "lstformer_eer": 0.2196886755953606,
+          "transformer_auc": 0.7215696281723067,
+          "lstformer_auc": 0.8478033601962447,
+          "transformer_recon_gap": 1.3049554196186364,
+          "lstformer_recon_gap": 1.4638024193700403
+        },
+        {
+          "user": "720396",
+          "delta_eer": -0.012794384057971064,
+          "transformer_eer": 0.5200407608695652,
+          "lstformer_eer": 0.5328351449275363,
+          "transformer_auc": 0.4160439311594203,
+          "lstformer_auc": 0.5056753849637681,
+          "transformer_recon_gap": 0.3751342697069049,
+          "lstformer_recon_gap": 0.36592510621994734
+        },
+        {
+          "user": "720842",
+          "delta_eer": 0.01373240387992758,
+          "transformer_eer": 0.3014103915052282,
+          "lstformer_eer": 0.2876779876253006,
+          "transformer_auc": 0.7891151902864637,
+          "lstformer_auc": 0.8313645839178789,
+          "transformer_recon_gap": -3.2949942350387573,
+          "lstformer_recon_gap": -3.2680187225341797
+        },
+        {
+          "user": "726027",
+          "delta_eer": 0.30705313253910976,
+          "transformer_eer": 0.5600181178003032,
+          "lstformer_eer": 0.25296498526119343,
+          "transformer_auc": 0.5345096981197068,
+          "lstformer_auc": 0.7497365184124117,
+          "transformer_recon_gap": 0.7123058084398508,
+          "lstformer_recon_gap": 0.7038540630601346
+        },
+        {
+          "user": "728498",
+          "delta_eer": -0.0031729243786356998,
+          "transformer_eer": 0.5665295290584565,
+          "lstformer_eer": 0.5697024534370922,
+          "transformer_auc": 0.4510064574347828,
+          "lstformer_auc": 0.44963346416390537,
+          "transformer_recon_gap": 0.36236143857240677,
+          "lstformer_recon_gap": 0.19520500302314758
+        },
+        {
+          "user": "731275",
+          "delta_eer": -0.00941791968067407,
+          "transformer_eer": 0.37187555015152535,
+          "lstformer_eer": 0.3812934698321994,
+          "transformer_auc": 0.7083098312080925,
+          "lstformer_auc": 0.6203502203389477,
+          "transformer_recon_gap": 2.838648110628128,
+          "lstformer_recon_gap": 2.4341895738616586
+        },
+        {
+          "user": "733961",
+          "delta_eer": 0.03995702064690909,
+          "transformer_eer": 0.6984116248235288,
+          "lstformer_eer": 0.6584546041766197,
+          "transformer_auc": 0.24238029033429775,
+          "lstformer_auc": 0.29256460770157083,
+          "transformer_recon_gap": 0.7019369453191757,
+          "lstformer_recon_gap": 0.5901976022869349
+        },
+        {
+          "user": "734871",
+          "delta_eer": 0.005800457594739794,
+          "transformer_eer": 0.31354000545375715,
+          "lstformer_eer": 0.30773954785901736,
+          "transformer_auc": 0.6910304205265532,
+          "lstformer_auc": 0.7087441843186097,
+          "transformer_recon_gap": -0.6936026811599731,
+          "lstformer_recon_gap": 8.205738067626953
+        },
+        {
+          "user": "740329",
+          "delta_eer": 0.17455499434688,
+          "transformer_eer": 0.5140007045094285,
+          "lstformer_eer": 0.3394457101625485,
+          "transformer_auc": 0.46151617246845333,
+          "lstformer_auc": 0.7088728417296843,
+          "transformer_recon_gap": 0.12968845665454865,
+          "lstformer_recon_gap": 0.16661953181028366
+        },
+        {
+          "user": "748081",
+          "delta_eer": 0.25390466225589303,
+          "transformer_eer": 0.4496736062488582,
+          "lstformer_eer": 0.19576894399296516,
+          "transformer_auc": 0.7015509275648877,
+          "lstformer_auc": 0.8172595992891714,
+          "transformer_recon_gap": 1.0034617349738255,
+          "lstformer_recon_gap": 1.005388826248236
+        },
+        {
+          "user": "748549",
+          "delta_eer": -0.05569855070937296,
+          "transformer_eer": 0.3079051378195339,
+          "lstformer_eer": 0.36360368852890684,
+          "transformer_auc": 0.8680616264495539,
+          "lstformer_auc": 0.6327223965958522,
+          "transformer_recon_gap": 7.0226017236709595,
+          "lstformer_recon_gap": 0.0890434980392456
+        },
+        {
+          "user": "756382",
+          "delta_eer": -0.004129856962573841,
+          "transformer_eer": 0.26620382022255734,
+          "lstformer_eer": 0.2703336771851312,
+          "transformer_auc": 0.7723904446859089,
+          "lstformer_auc": 0.7621370978356428,
+          "transformer_recon_gap": 1.3034794879968103,
+          "lstformer_recon_gap": 1.4793471837510879
+        },
+        {
+          "user": "76383",
+          "delta_eer": -0.001170789491844737,
+          "transformer_eer": 0.2816678588211582,
+          "lstformer_eer": 0.2828386483130029,
+          "transformer_auc": 0.7163015245529537,
+          "lstformer_auc": 0.7185737477607107,
+          "transformer_recon_gap": 0.9528810977935791,
+          "lstformer_recon_gap": -0.7614737749099731
+        },
+        {
+          "user": "808884",
+          "delta_eer": 0.006934179350967823,
+          "transformer_eer": 0.11443750999332475,
+          "lstformer_eer": 0.10750333064235693,
+          "transformer_auc": 0.9612525627112576,
+          "lstformer_auc": 0.9572573205820839,
+          "transformer_recon_gap": 0.12649214267730713,
+          "lstformer_recon_gap": 0.15831327438354492
+        },
+        {
+          "user": "817580",
+          "delta_eer": -0.10121175649498632,
+          "transformer_eer": 0.02413898701002737,
+          "lstformer_eer": 0.12535074350501368,
+          "transformer_auc": 0.9950174837625342,
+          "lstformer_auc": 0.8668465488263446,
+          "transformer_recon_gap": 0.7177020946874109,
+          "lstformer_recon_gap": 0.6806015495822066
+        },
+        {
+          "user": "82889",
+          "delta_eer": -0.04487060127580528,
+          "transformer_eer": 0.2717513771570105,
+          "lstformer_eer": 0.31662197843281575,
+          "transformer_auc": 0.787560478806678,
+          "lstformer_auc": 0.6788703150374447,
+          "transformer_recon_gap": 0.5742494026198983,
+          "lstformer_recon_gap": 0.7671674974262714
+        },
+        {
+          "user": "836222",
+          "delta_eer": -8.309788931359918e-05,
+          "transformer_eer": 0.0026560424966799467,
+          "lstformer_eer": 0.002739140385993546,
+          "transformer_auc": 0.9946887978527417,
+          "lstformer_auc": 0.994523484920216,
+          "transformer_recon_gap": -3.71329128742218,
+          "lstformer_recon_gap": -3.7822171449661255
+        },
+        {
+          "user": "840180",
+          "delta_eer": 0.01564583469954312,
+          "transformer_eer": 0.031845804096443484,
+          "lstformer_eer": 0.016199969396900365,
+          "transformer_auc": 0.9718943318687564,
+          "lstformer_auc": 0.9816348613023804,
+          "transformer_recon_gap": 1.0654674684774363,
+          "lstformer_recon_gap": 1.1754218733913149
+        },
+        {
+          "user": "84500",
+          "delta_eer": -0.013141035198693862,
+          "transformer_eer": 0.12461577725634326,
+          "lstformer_eer": 0.13775681245503713,
+          "transformer_auc": 0.8785596952962795,
+          "lstformer_auc": 0.8682008241481751,
+          "transformer_recon_gap": 0.8207558559697645,
+          "lstformer_recon_gap": 0.9398070392089721
+        },
+        {
+          "user": "846718",
+          "delta_eer": -0.2796402159856778,
+          "transformer_eer": 0.2352303381773947,
+          "lstformer_eer": 0.5148705541630725,
+          "transformer_auc": 0.8175293210749617,
+          "lstformer_auc": 0.6023795145428845,
+          "transformer_recon_gap": 0.41678987070918083,
+          "lstformer_recon_gap": 0.4463521232828498
+        },
+        {
+          "user": "850304",
+          "delta_eer": 0.24869950457745943,
+          "transformer_eer": 0.6146349511014442,
+          "lstformer_eer": 0.36593544652398474,
+          "transformer_auc": 0.3304187459318725,
+          "lstformer_auc": 0.6437996559140559,
+          "transformer_recon_gap": 0.373401153832674,
+          "lstformer_recon_gap": 0.22930705919861794
+        },
+        {
+          "user": "857069",
+          "delta_eer": 0.2121353841890113,
+          "transformer_eer": 0.40523886232938405,
+          "lstformer_eer": 0.19310347814037276,
+          "transformer_auc": 0.7021008712672347,
+          "lstformer_auc": 0.8334688373288066,
+          "transformer_recon_gap": 0.3718187194317579,
+          "lstformer_recon_gap": 0.4522071862593293
+        },
+        {
+          "user": "861335",
+          "delta_eer": 0.007342378003593265,
+          "transformer_eer": 0.01119594255079943,
+          "lstformer_eer": 0.0038535645472061657,
+          "transformer_auc": 0.9825061062971678,
+          "lstformer_auc": 0.9949405396677354,
+          "transformer_recon_gap": 0.9431666261516511,
+          "lstformer_recon_gap": 0.7880720654502511
+        },
+        {
+          "user": "864651",
+          "delta_eer": 0.31144217117939355,
+          "transformer_eer": 0.41322296589257346,
+          "lstformer_eer": 0.10178079471317988,
+          "transformer_auc": 0.6018474292668086,
+          "lstformer_auc": 0.9349841124970423,
+          "transformer_recon_gap": 0.526913296431303,
+          "lstformer_recon_gap": 0.5615169629454613
+        },
+        {
+          "user": "867544",
+          "delta_eer": 0.015937799092607563,
+          "transformer_eer": 0.2991199743196406,
+          "lstformer_eer": 0.28318217522703304,
+          "transformer_auc": 0.7045397727524878,
+          "lstformer_auc": 0.721297094835378,
+          "transformer_recon_gap": 2.1296017952263355,
+          "lstformer_recon_gap": 1.788213045685552
+        },
+        {
+          "user": "876061",
+          "delta_eer": -0.012384481176224704,
+          "transformer_eer": 0.5999800085418049,
+          "lstformer_eer": 0.6123644897180296,
+          "transformer_auc": 0.4029641880287514,
+          "lstformer_auc": 0.4299647726274531,
+          "transformer_recon_gap": -0.27506768703460693,
+          "lstformer_recon_gap": -0.24835628271102905
+        },
+        {
+          "user": "917826",
+          "delta_eer": 0.04526093480390836,
+          "transformer_eer": 0.6738616687120056,
+          "lstformer_eer": 0.6286007339080972,
+          "transformer_auc": 0.2904166715159948,
+          "lstformer_auc": 0.3321427693931098,
+          "transformer_recon_gap": 0.8385121393948793,
+          "lstformer_recon_gap": 0.8416561419144273
+        },
+        {
+          "user": "931304",
+          "delta_eer": 0.0655112847628406,
+          "transformer_eer": 0.2836222762934194,
+          "lstformer_eer": 0.2181109915305788,
+          "transformer_auc": 0.8844540108870276,
+          "lstformer_auc": 0.9062417138489853,
+          "transformer_recon_gap": -3.3490183353424072,
+          "lstformer_recon_gap": -3.260528087615967
+        },
+        {
+          "user": "936327",
+          "delta_eer": 0.01051515397541214,
+          "transformer_eer": 0.24141676569215742,
+          "lstformer_eer": 0.23090161171674528,
+          "transformer_auc": 0.7519675934468498,
+          "lstformer_auc": 0.7564034433807917,
+          "transformer_recon_gap": 0.7716940920799971,
+          "lstformer_recon_gap": 1.1184515645727515
+        },
+        {
+          "user": "941227",
+          "delta_eer": 0.00022638548899012179,
+          "transformer_eer": 0.5482068211778757,
+          "lstformer_eer": 0.5479804356888855,
+          "transformer_auc": 0.5264217033202552,
+          "lstformer_auc": 0.5424549029328586,
+          "transformer_recon_gap": 0.627506154589355,
+          "lstformer_recon_gap": 0.5753616392612457
+        },
+        {
+          "user": "955036",
+          "delta_eer": 0.12088054937034357,
+          "transformer_eer": 0.17443108585167666,
+          "lstformer_eer": 0.05355053648133309,
+          "transformer_auc": 0.8265387556370238,
+          "lstformer_auc": 0.9585450763559349,
+          "transformer_recon_gap": 1.9769334371740115,
+          "lstformer_recon_gap": 1.698141756322002
+        },
+        {
+          "user": "959726",
+          "delta_eer": 0.059418284028727786,
+          "transformer_eer": 0.07732611576607387,
+          "lstformer_eer": 0.01790783173734609,
+          "transformer_auc": 0.9789472629531465,
+          "lstformer_auc": 0.9930344775991792,
+          "transformer_recon_gap": -3.3135918378829956,
+          "lstformer_recon_gap": -3.334083318710327
+        },
+        {
+          "user": "95977",
+          "delta_eer": 0.0015606710885680553,
+          "transformer_eer": 0.2992534086954688,
+          "lstformer_eer": 0.29769273760690074,
+          "transformer_auc": 0.7037835728822853,
+          "lstformer_auc": 0.7085367654037182,
+          "transformer_recon_gap": 4.360728666535579,
+          "lstformer_recon_gap": 2.4875319064594805
+        },
+        {
+          "user": "964401",
+          "delta_eer": 0.15039680109940945,
+          "transformer_eer": 0.3112921633058481,
+          "lstformer_eer": 0.16089536220643863,
+          "transformer_auc": 0.7806478249925165,
+          "lstformer_auc": 0.8777327911121996,
+          "transformer_recon_gap": 0.31877336371690035,
+          "lstformer_recon_gap": 0.4295156728476286
+        },
+        {
+          "user": "966358",
+          "delta_eer": 0.0726422042195555,
+          "transformer_eer": 0.20114261577784517,
+          "lstformer_eer": 0.12850041155828967,
+          "transformer_auc": 0.8575336827968635,
+          "lstformer_auc": 0.9140536325434303,
+          "transformer_recon_gap": 0.1520499330945313,
+          "lstformer_recon_gap": 0.19068874046206474
+        }
+      ]
+    },
+    "100": {
+      "eer_delta": {
+        "label": "N=100",
+        "n": 81,
+        "mean_delta": 0.013442421975604893,
+        "median_delta": 0.005537098560354448,
+        "std_delta": 0.1165245438197663,
+        "pct_lstformer_better": 56.79012345679013,
+        "pct_transformer_better": 41.97530864197531,
+        "pct_tied": 1.2345679012345678,
+        "n_lstformer_better": 46,
+        "n_transformer_better": 34,
+        "top10pct_of_winners_share_of_positive_mass": 0.35631273973688277,
+        "top20pct_of_winners_share_of_positive_mass": 0.6515385138462019,
+        "ttest_mean_gt_0": {
+          "t": 1.0382516319271926,
+          "p": 0.3022808683705881,
+          "significant": false
+        },
+        "wilcoxon_delta_gt_0": {
+          "statistic": 1877.0,
+          "p": 0.10885396916851364,
+          "significant": false
+        },
+        "quartiles": {
+          "q25": -0.02157802964254585,
+          "q50": 0.005537098560354448,
+          "q75": 0.035138797808041494
+        }
+      },
+      "mean_auc_delta_lstformer_minus_transformer": 0.011629370670873485,
+      "mean_recon_gap_delta_lstformer_minus_transformer": -6.219017017156552,
+      "per_user": [
+        {
+          "user": "118630",
+          "delta_eer": 0.03919099539516446,
+          "transformer_eer": 0.5149445070018523,
+          "lstformer_eer": 0.4757535116066879,
+          "transformer_auc": 0.43452406018938106,
+          "lstformer_auc": 0.5183104007030842,
+          "transformer_recon_gap": -0.5794047713279724,
+          "lstformer_recon_gap": -0.44063466787338257
+        },
+        {
+          "user": "123597",
+          "delta_eer": -0.009657228320357952,
+          "transformer_eer": 0.24530567196602585,
+          "lstformer_eer": 0.2549629002863838,
+          "transformer_auc": 0.7858093857866315,
+          "lstformer_auc": 0.7542195150372467,
+          "transformer_recon_gap": 1.2084844216951751,
+          "lstformer_recon_gap": 1.3555839276195911
+        },
+        {
+          "user": "132109",
+          "delta_eer": 0.2366961038395366,
+          "transformer_eer": 0.4849837750724133,
+          "lstformer_eer": 0.2482876712328767,
+          "transformer_auc": 0.5416784633142409,
+          "lstformer_auc": 0.7729435720974802,
+          "transformer_recon_gap": 1.5038084983825684,
+          "lstformer_recon_gap": 1.5264245243743062
+        },
+        {
+          "user": "132522",
+          "delta_eer": -0.004019587137321146,
+          "transformer_eer": 0.10866445227375274,
+          "lstformer_eer": 0.11268403941107388,
+          "transformer_auc": 0.8974403281909498,
+          "lstformer_auc": 0.9036067084585329,
+          "transformer_recon_gap": 1.2485316141064686,
+          "lstformer_recon_gap": 1.334547074882721
+        },
+        {
+          "user": "140132",
+          "delta_eer": 0.26981291043860234,
+          "transformer_eer": 0.3531940267408359,
+          "lstformer_eer": 0.08338111630223358,
+          "transformer_auc": 0.8179995319702591,
+          "lstformer_auc": 0.953021100406586,
+          "transformer_recon_gap": 2.8277381727239117,
+          "lstformer_recon_gap": 1.1655640272656456
+        },
+        {
+          "user": "150191",
+          "delta_eer": 0.00023199164830067787,
+          "transformer_eer": 0.14978964997542774,
+          "lstformer_eer": 0.14955765832712706,
+          "transformer_auc": 0.902334180280464,
+          "lstformer_auc": 0.889002038329447,
+          "transformer_recon_gap": -3.393194317817688,
+          "lstformer_recon_gap": -3.389934778213501
+        },
+        {
+          "user": "160180",
+          "delta_eer": -0.1521638915435321,
+          "transformer_eer": 0.4394251268102624,
+          "lstformer_eer": 0.5915890183537945,
+          "transformer_auc": 0.5726323773554853,
+          "lstformer_auc": 0.3653863628938061,
+          "transformer_recon_gap": 0.5880891382694244,
+          "lstformer_recon_gap": 0.4783581495285034
+        },
+        {
+          "user": "163748",
+          "delta_eer": 0.19907057029322972,
+          "transformer_eer": 0.5542586874543336,
+          "lstformer_eer": 0.3551881171611039,
+          "transformer_auc": 0.38618245656477157,
+          "lstformer_auc": 0.646161239544733,
+          "transformer_recon_gap": 1.8346171639859676,
+          "lstformer_recon_gap": 2.8313648076727986
+        },
+        {
+          "user": "172020",
+          "delta_eer": -0.025282489352797866,
+          "transformer_eer": 0.5499372245882671,
+          "lstformer_eer": 0.575219713941065,
+          "transformer_auc": 0.40961571600896085,
+          "lstformer_auc": 0.3756062135348711,
+          "transformer_recon_gap": 0.42726464476436377,
+          "lstformer_recon_gap": 0.409679364413023
+        },
+        {
+          "user": "185546",
+          "delta_eer": 0.03843590230272684,
+          "transformer_eer": 0.14354577869980548,
+          "lstformer_eer": 0.10510987639707864,
+          "transformer_auc": 0.8729042215686783,
+          "lstformer_auc": 0.9089563382363137,
+          "transformer_recon_gap": 1.0759859085083008,
+          "lstformer_recon_gap": 3.814825564622879
+        },
+        {
+          "user": "198810",
+          "delta_eer": -0.03054116201430268,
+          "transformer_eer": 0.5268909499134882,
+          "lstformer_eer": 0.5574321119277909,
+          "transformer_auc": 0.43040534202269476,
+          "lstformer_auc": 0.40755138957058723,
+          "transformer_recon_gap": 0.5032114731147885,
+          "lstformer_recon_gap": 0.4526769001968205
+        },
+        {
+          "user": "199679",
+          "delta_eer": -0.10797967839585179,
+          "transformer_eer": 5.084401057553478e-05,
+          "lstformer_eer": 0.10803052240642733,
+          "transformer_auc": 0.9998983119788488,
+          "lstformer_auc": 0.89156308488581,
+          "transformer_recon_gap": 1.7152261403571174,
+          "lstformer_recon_gap": 1.6860358595986327
+        },
+        {
+          "user": "200355",
+          "delta_eer": 0.028694551949985048,
+          "transformer_eer": 0.370323012801429,
+          "lstformer_eer": 0.34162846085144394,
+          "transformer_auc": 0.7256311402203037,
+          "lstformer_auc": 0.8048377493301577,
+          "transformer_recon_gap": 1.1282823845103849,
+          "lstformer_recon_gap": 1.1302457941928878
+        },
+        {
+          "user": "204416",
+          "delta_eer": 0.02996373065322322,
+          "transformer_eer": 0.11845504368929435,
+          "lstformer_eer": 0.08849131303607113,
+          "transformer_auc": 0.9414011646906928,
+          "lstformer_auc": 0.9477860697850091,
+          "transformer_recon_gap": 10.413788250647485,
+          "lstformer_recon_gap": 20.523084096610546
+        },
+        {
+          "user": "25563",
+          "delta_eer": 0.026027513227513288,
+          "transformer_eer": 0.3703051851851852,
+          "lstformer_eer": 0.3442776719576719,
+          "transformer_auc": 0.8050692063492064,
+          "lstformer_auc": 0.8147691005291006,
+          "transformer_recon_gap": -2.085836946964264,
+          "lstformer_recon_gap": -2.0763838291168213
+        },
+        {
+          "user": "268386",
+          "delta_eer": 0.004912450943683477,
+          "transformer_eer": 0.38544254491501007,
+          "lstformer_eer": 0.3805300939713266,
+          "transformer_auc": 0.6143844693505389,
+          "lstformer_auc": 0.6168659489526026,
+          "transformer_recon_gap": 0.9304749267175794,
+          "lstformer_recon_gap": 0.9892985181650147
+        },
+        {
+          "user": "271479",
+          "delta_eer": -0.0021626297577853615,
+          "transformer_eer": 0.5360992813414959,
+          "lstformer_eer": 0.5382619110992812,
+          "transformer_auc": 0.5132020228906042,
+          "lstformer_auc": 0.46193771626297575,
+          "transformer_recon_gap": 0.2562611838802695,
+          "lstformer_recon_gap": 0.26825644075870514
+        },
+        {
+          "user": "284695",
+          "delta_eer": -0.012299402223399397,
+          "transformer_eer": 0.050946966080528816,
+          "lstformer_eer": 0.06324636830392821,
+          "transformer_auc": 0.9922982456236064,
+          "lstformer_auc": 0.9818784817336339,
+          "transformer_recon_gap": -3.606726050376892,
+          "lstformer_recon_gap": -3.606452226638794
+        },
+        {
+          "user": "315209",
+          "delta_eer": -0.031203857574849482,
+          "transformer_eer": 0.003201024327784907,
+          "lstformer_eer": 0.03440488190263439,
+          "transformer_auc": 0.9943738251559647,
+          "lstformer_auc": 0.9571950854060535,
+          "transformer_recon_gap": 1.0381391709379386,
+          "lstformer_recon_gap": 1.1498111740547756
+        },
+        {
+          "user": "331516",
+          "delta_eer": 0.005537098560354448,
+          "transformer_eer": 0.5227743271221532,
+          "lstformer_eer": 0.5172372285617988,
+          "transformer_auc": 0.43223072848957583,
+          "lstformer_auc": 0.44836053733930376,
+          "transformer_recon_gap": 0.30588702112436295,
+          "lstformer_recon_gap": 0.40544290840625763
+        },
+        {
+          "user": "353108",
+          "delta_eer": 0.01672412061163342,
+          "transformer_eer": 0.44061663150828245,
+          "lstformer_eer": 0.42389251089664903,
+          "transformer_auc": 0.6410310594311446,
+          "lstformer_auc": 0.6361928002489263,
+          "transformer_recon_gap": 1.0239605851238593,
+          "lstformer_recon_gap": 1.066510630887933
+        },
+        {
+          "user": "362153",
+          "delta_eer": 0.1304184113022262,
+          "transformer_eer": 0.6016281591710095,
+          "lstformer_eer": 0.47120974786878334,
+          "transformer_auc": 0.2811549236376781,
+          "lstformer_auc": 0.542398409494834,
+          "transformer_recon_gap": 1.4953388944268227,
+          "lstformer_recon_gap": 1.4615665301680565
+        },
+        {
+          "user": "372603",
+          "delta_eer": 0.09437137872325163,
+          "transformer_eer": 0.5992495977550716,
+          "lstformer_eer": 0.50487821903182,
+          "transformer_auc": 0.41154433195365075,
+          "lstformer_auc": 0.5817249385616206,
+          "transformer_recon_gap": 0.1557882074266672,
+          "lstformer_recon_gap": 0.13984040915966034
+        },
+        {
+          "user": "379016",
+          "delta_eer": -0.18102074270669968,
+          "transformer_eer": 0.1895356841261168,
+          "lstformer_eer": 0.3705564268328165,
+          "transformer_auc": 0.8447320053648602,
+          "lstformer_auc": 0.7158298856773846,
+          "transformer_recon_gap": 1.0103249219246209,
+          "lstformer_recon_gap": 1.0400708932429552
+        },
+        {
+          "user": "403222",
+          "delta_eer": -0.0038357869274471407,
+          "transformer_eer": 0.11775399811646828,
+          "lstformer_eer": 0.12158978504391542,
+          "transformer_auc": 0.9085310997771534,
+          "lstformer_auc": 0.8901140914680226,
+          "transformer_recon_gap": 0.9870989280752838,
+          "lstformer_recon_gap": 1.1473584529012442
+        },
+        {
+          "user": "417934",
+          "delta_eer": 0.008927834392048584,
+          "transformer_eer": 0.6002696710633185,
+          "lstformer_eer": 0.5913418366712699,
+          "transformer_auc": 0.32675136389419146,
+          "lstformer_auc": 0.35008800241023663,
+          "transformer_recon_gap": 0.5187726840376854,
+          "lstformer_recon_gap": 0.6841509267687798
+        },
+        {
+          "user": "418711",
+          "delta_eer": 0.09174211118055603,
+          "transformer_eer": 0.3980305751364066,
+          "lstformer_eer": 0.3062884639558506,
+          "transformer_auc": 0.6703134078944014,
+          "lstformer_auc": 0.8603680936294327,
+          "transformer_recon_gap": 0.4663935441058129,
+          "lstformer_recon_gap": 0.4743468459928408
+        },
+        {
+          "user": "424559",
+          "delta_eer": 0.10601026880096648,
+          "transformer_eer": 0.2543038356991845,
+          "lstformer_eer": 0.14829356689821804,
+          "transformer_auc": 0.8215040773180309,
+          "lstformer_auc": 0.8945266619685225,
+          "transformer_recon_gap": 0.5850197300314903,
+          "lstformer_recon_gap": 0.5838958192616701
+        },
+        {
+          "user": "435832",
+          "delta_eer": 0.035138797808041494,
+          "transformer_eer": 0.1723670711344748,
+          "lstformer_eer": 0.1372282733264333,
+          "transformer_auc": 0.8268287419350842,
+          "lstformer_auc": 0.8952294144215441,
+          "transformer_recon_gap": 142.11936862477705,
+          "lstformer_recon_gap": 25.93607552262256
+        },
+        {
+          "user": "441582",
+          "delta_eer": 0.006851269697231601,
+          "transformer_eer": 0.015064151038515838,
+          "lstformer_eer": 0.008212881341284237,
+          "transformer_auc": 0.9848036038371791,
+          "lstformer_auc": 0.9946869688589289,
+          "transformer_recon_gap": -3.781743884086609,
+          "lstformer_recon_gap": -3.7683762311935425
+        },
+        {
+          "user": "459906",
+          "delta_eer": 0.12963612903225807,
+          "transformer_eer": 0.47303913978494627,
+          "lstformer_eer": 0.3434030107526882,
+          "transformer_auc": 0.5487449462365591,
+          "lstformer_auc": 0.7377565591397849,
+          "transformer_recon_gap": 0.3607498127967119,
+          "lstformer_recon_gap": 0.22363699786365032
+        },
+        {
+          "user": "465234",
+          "delta_eer": 0.01019877536693492,
+          "transformer_eer": 0.5195384442046602,
+          "lstformer_eer": 0.5093396688377253,
+          "transformer_auc": 0.6142001389593075,
+          "lstformer_auc": 0.4512226830124413,
+          "transformer_recon_gap": 0.21070057339966297,
+          "lstformer_recon_gap": 0.2339569255709648
+        },
+        {
+          "user": "472557",
+          "delta_eer": 0.0,
+          "transformer_eer": 0.002061855670103093,
+          "lstformer_eer": 0.002061855670103093,
+          "transformer_auc": 0.9958762886597938,
+          "lstformer_auc": 0.9958762886597938,
+          "transformer_recon_gap": -4.008353173732758,
+          "lstformer_recon_gap": -4.00873476266861
+        },
+        {
+          "user": "473072",
+          "delta_eer": 0.010473916623368107,
+          "transformer_eer": 0.5010695030296892,
+          "lstformer_eer": 0.4905955864063211,
+          "transformer_auc": 0.5060935352027837,
+          "lstformer_auc": 0.6319024937925425,
+          "transformer_recon_gap": 0.8534266985952854,
+          "lstformer_recon_gap": 1.3209503861144185
+        },
+        {
+          "user": "547844",
+          "delta_eer": -0.2659154170782078,
+          "transformer_eer": 0.2723504235132142,
+          "lstformer_eer": 0.538265840591422,
+          "transformer_auc": 0.7545718475951035,
+          "lstformer_auc": 0.4502409386130316,
+          "transformer_recon_gap": 0.35735880001448095,
+          "lstformer_recon_gap": 0.319992714561522
+        },
+        {
+          "user": "562519",
+          "delta_eer": 0.0011200000000000099,
+          "transformer_eer": 0.5812025806451613,
+          "lstformer_eer": 0.5800825806451613,
+          "transformer_auc": 0.3537651612903226,
+          "lstformer_auc": 0.36919225806451617,
+          "transformer_recon_gap": 1.5302882865071297,
+          "lstformer_recon_gap": 1.5774987079203129
+        },
+        {
+          "user": "58036",
+          "delta_eer": -0.014090399383139884,
+          "transformer_eer": 0.3751378138443247,
+          "lstformer_eer": 0.3892282132274646,
+          "transformer_auc": 0.7916436638450234,
+          "lstformer_auc": 0.6170450177269302,
+          "transformer_recon_gap": 302.6834327748511,
+          "lstformer_recon_gap": 1.7823200938873924
+        },
+        {
+          "user": "600436",
+          "delta_eer": -0.031947044518878254,
+          "transformer_eer": 0.3936598400496841,
+          "lstformer_eer": 0.4256068845685623,
+          "transformer_auc": 0.7083552135159699,
+          "lstformer_auc": 0.7419829527417723,
+          "transformer_recon_gap": 1.2523370091803372,
+          "lstformer_recon_gap": 2.085127907223068
+        },
+        {
+          "user": "624698",
+          "delta_eer": 0.00630342464354125,
+          "transformer_eer": 0.24028341668143688,
+          "lstformer_eer": 0.23397999203789563,
+          "transformer_auc": 0.7775970843900238,
+          "lstformer_auc": 0.7877780317700112,
+          "transformer_recon_gap": -3.730373978614807,
+          "lstformer_recon_gap": -3.729591131210327
+        },
+        {
+          "user": "631580",
+          "delta_eer": 0.0015677214529520311,
+          "transformer_eer": 0.3237902749002599,
+          "lstformer_eer": 0.3222225534473079,
+          "transformer_auc": 0.6811649848712942,
+          "lstformer_auc": 0.6810441539600444,
+          "transformer_recon_gap": 1.2775061130523682,
+          "lstformer_recon_gap": 2.138211250305176
+        },
+        {
+          "user": "64469",
+          "delta_eer": -0.016466973886328784,
+          "transformer_eer": 0.4005120327700973,
+          "lstformer_eer": 0.41697900665642607,
+          "transformer_auc": 0.7472469704727769,
+          "lstformer_auc": 0.6831268134493941,
+          "transformer_recon_gap": 0.14571642223745584,
+          "lstformer_recon_gap": 0.2152923089452088
+        },
+        {
+          "user": "64562",
+          "delta_eer": 0.018790051048115486,
+          "transformer_eer": 0.3825237138409181,
+          "lstformer_eer": 0.3637336627928026,
+          "transformer_auc": 0.6529882154882154,
+          "lstformer_auc": 0.7116075630860577,
+          "transformer_recon_gap": 0.7580067839007825,
+          "lstformer_recon_gap": 0.7555524953640997
+        },
+        {
+          "user": "656428",
+          "delta_eer": 0.271337444685058,
+          "transformer_eer": 0.5330174721239593,
+          "lstformer_eer": 0.26168002743890134,
+          "transformer_auc": 0.4212140368811116,
+          "lstformer_auc": 0.7457227594926494,
+          "transformer_recon_gap": 0.7651555566117167,
+          "lstformer_recon_gap": 0.5318144401535392
+        },
+        {
+          "user": "681745",
+          "delta_eer": -0.229282176537067,
+          "transformer_eer": 0.25437987881085933,
+          "lstformer_eer": 0.48366205534792633,
+          "transformer_auc": 0.7594725657124686,
+          "lstformer_auc": 0.613642888020723,
+          "transformer_recon_gap": 0.692946738563478,
+          "lstformer_recon_gap": 0.6597723574377596
+        },
+        {
+          "user": "708224",
+          "delta_eer": -0.02290345313601133,
+          "transformer_eer": 0.4648142555119299,
+          "lstformer_eer": 0.48771770864794123,
+          "transformer_auc": 0.5581059767106279,
+          "lstformer_auc": 0.45629047954629354,
+          "transformer_recon_gap": -1.090275138616562,
+          "lstformer_recon_gap": -0.999173492193222
+        },
+        {
+          "user": "710535",
+          "delta_eer": -0.14267221750356374,
+          "transformer_eer": 0.25958599596289933,
+          "lstformer_eer": 0.40225821346646307,
+          "transformer_auc": 0.8947706202435393,
+          "lstformer_auc": 0.58960864905395,
+          "transformer_recon_gap": 97.08839020458981,
+          "lstformer_recon_gap": -0.30174148082733154
+        },
+        {
+          "user": "714967",
+          "delta_eer": -0.03263741165168471,
+          "transformer_eer": 0.4907019831194675,
+          "lstformer_eer": 0.5233393947711522,
+          "transformer_auc": 0.5848830028134222,
+          "lstformer_auc": 0.5078913058395664,
+          "transformer_recon_gap": 0.4993384387344122,
+          "lstformer_recon_gap": 0.6848860192112625
+        },
+        {
+          "user": "720396",
+          "delta_eer": 0.04121677740863783,
+          "transformer_eer": 0.5308520210409745,
+          "lstformer_eer": 0.4896352436323367,
+          "transformer_auc": 0.5792497231450721,
+          "lstformer_auc": 0.6190130121816169,
+          "transformer_recon_gap": 0.9541028789244592,
+          "lstformer_recon_gap": 0.9464437980204821
+        },
+        {
+          "user": "720842",
+          "delta_eer": 0.009655144811373417,
+          "transformer_eer": 0.30307696520693206,
+          "lstformer_eer": 0.29342182039555864,
+          "transformer_auc": 0.7145081005474795,
+          "lstformer_auc": 0.766877808228412,
+          "transformer_recon_gap": -4.014301121234894,
+          "lstformer_recon_gap": -3.857209324836731
+        },
+        {
+          "user": "726027",
+          "delta_eer": 0.2407684074215204,
+          "transformer_eer": 0.6334526442806645,
+          "lstformer_eer": 0.3926842368591441,
+          "transformer_auc": 0.37403468885439806,
+          "lstformer_auc": 0.6877074032939786,
+          "transformer_recon_gap": 0.8766732322983444,
+          "lstformer_recon_gap": 1.1856814827769995
+        },
+        {
+          "user": "728498",
+          "delta_eer": 0.02680345969819653,
+          "transformer_eer": 0.4813029076186971,
+          "lstformer_eer": 0.45449944792050057,
+          "transformer_auc": 0.5451048951048951,
+          "lstformer_auc": 0.48060360691939635,
+          "transformer_recon_gap": 1.8660269193351269,
+          "lstformer_recon_gap": 1.4369105845689774
+        },
+        {
+          "user": "731275",
+          "delta_eer": 0.002659339953083373,
+          "transformer_eer": 0.37081802114463835,
+          "lstformer_eer": 0.368158681191555,
+          "transformer_auc": 0.6365029296142763,
+          "lstformer_auc": 0.7069613633685744,
+          "transformer_recon_gap": 15.764192888746038,
+          "lstformer_recon_gap": 3.7328606359660625
+        },
+        {
+          "user": "733961",
+          "delta_eer": 0.07750492748083693,
+          "transformer_eer": 0.6732317481734934,
+          "lstformer_eer": 0.5957268206926565,
+          "transformer_auc": 0.239547235890481,
+          "lstformer_auc": 0.3500359199537646,
+          "transformer_recon_gap": 0.19017541222274303,
+          "lstformer_recon_gap": 0.13177279569208622
+        },
+        {
+          "user": "734871",
+          "delta_eer": -0.00861712489891936,
+          "transformer_eer": 0.30095306795069715,
+          "lstformer_eer": 0.3095701928496165,
+          "transformer_auc": 0.7106358534065198,
+          "lstformer_auc": 0.6981910648794792,
+          "transformer_recon_gap": -1.2385833263397217,
+          "lstformer_recon_gap": -1.2140992879867554
+        },
+        {
+          "user": "740329",
+          "delta_eer": 0.2259825079509314,
+          "transformer_eer": 0.4932530667878237,
+          "lstformer_eer": 0.2672705588368923,
+          "transformer_auc": 0.5501703771013176,
+          "lstformer_auc": 0.760290776919582,
+          "transformer_recon_gap": 2.9997211694717407,
+          "lstformer_recon_gap": 3.0798434689641
+        },
+        {
+          "user": "748081",
+          "delta_eer": -0.03232093080905174,
+          "transformer_eer": 0.18554823306443177,
+          "lstformer_eer": 0.2178691638734835,
+          "transformer_auc": 0.8480196309569961,
+          "lstformer_auc": 0.8393596644136602,
+          "transformer_recon_gap": 0.46332834870554507,
+          "lstformer_recon_gap": 0.5083368946798146
+        },
+        {
+          "user": "748549",
+          "delta_eer": 0.20782234183350523,
+          "transformer_eer": 0.35115639814622185,
+          "lstformer_eer": 0.14333405631271662,
+          "transformer_auc": 0.7127874396349101,
+          "lstformer_auc": 0.934706108880695,
+          "transformer_recon_gap": 0.016000479459762573,
+          "lstformer_recon_gap": 0.2824080288410187
+        },
+        {
+          "user": "756382",
+          "delta_eer": 0.010115481709758511,
+          "transformer_eer": 0.27122428383520314,
+          "lstformer_eer": 0.26110880212544463,
+          "transformer_auc": 0.7375903574671347,
+          "lstformer_auc": 0.7580629723566894,
+          "transformer_recon_gap": 1.1696588580816751,
+          "lstformer_recon_gap": 1.24508481410885
+        },
+        {
+          "user": "76383",
+          "delta_eer": -0.001005988195588392,
+          "transformer_eer": 0.28524920109812674,
+          "lstformer_eer": 0.28625518929371513,
+          "transformer_auc": 0.7107387506213745,
+          "lstformer_auc": 0.7092217934675259,
+          "transformer_recon_gap": 2.0238841772079468,
+          "lstformer_recon_gap": -0.5533826351165771
+        },
+        {
+          "user": "808884",
+          "delta_eer": -0.0038033550451006815,
+          "transformer_eer": 0.11005528145330332,
+          "lstformer_eer": 0.113858636498404,
+          "transformer_auc": 0.9563746611407802,
+          "lstformer_auc": 0.9509610873227738,
+          "transformer_recon_gap": 0.19275331497192383,
+          "lstformer_recon_gap": 0.7198367118835449
+        },
+        {
+          "user": "817580",
+          "delta_eer": 0.021587743732590536,
+          "transformer_eer": 0.1469141713091922,
+          "lstformer_eer": 0.12532642757660167,
+          "transformer_auc": 0.8466515784586816,
+          "lstformer_auc": 0.9021696552924792,
+          "transformer_recon_gap": 0.6689971715386491,
+          "lstformer_recon_gap": 0.7174931607751205
+        },
+        {
+          "user": "82889",
+          "delta_eer": -0.11583993898882439,
+          "transformer_eer": 0.4323113523949511,
+          "lstformer_eer": 0.5481512913837755,
+          "transformer_auc": 0.6294343925713353,
+          "lstformer_auc": 0.4120004199622034,
+          "transformer_recon_gap": 0.731257826089859,
+          "lstformer_recon_gap": 0.7640564441680908
+        },
+        {
+          "user": "836222",
+          "delta_eer": 0.016445050443709842,
+          "transformer_eer": 0.021833160508962994,
+          "lstformer_eer": 0.0053881100652531525,
+          "transformer_auc": 0.9593136323833942,
+          "lstformer_auc": 0.989394768026801,
+          "transformer_recon_gap": -3.5911712646484375,
+          "lstformer_recon_gap": -3.602412700653076
+        },
+        {
+          "user": "840180",
+          "delta_eer": -0.0047738693467336835,
+          "transformer_eer": 0.0012562814070351536,
+          "lstformer_eer": 0.006030150753768837,
+          "transformer_auc": 0.9979812103998251,
+          "lstformer_auc": 0.9882717937513654,
+          "transformer_recon_gap": 1.4203915295438492,
+          "lstformer_recon_gap": 1.6797906457140925
+        },
+        {
+          "user": "84500",
+          "delta_eer": 0.012874182979174698,
+          "transformer_eer": 0.10997756158006666,
+          "lstformer_eer": 0.09710337860089197,
+          "transformer_auc": 0.9291171058531531,
+          "lstformer_auc": 0.9109375203499352,
+          "transformer_recon_gap": 1.162177769725531,
+          "lstformer_recon_gap": 1.1462366415835277
+        },
+        {
+          "user": "846718",
+          "delta_eer": -0.1594837001881937,
+          "transformer_eer": 0.2546677292281516,
+          "lstformer_eer": 0.4141514294163453,
+          "transformer_auc": 0.7726162483784075,
+          "lstformer_auc": 0.7000773619326757,
+          "transformer_recon_gap": 0.5192176848649979,
+          "lstformer_recon_gap": 0.49339682003483176
+        },
+        {
+          "user": "850304",
+          "delta_eer": 0.02827188671555758,
+          "transformer_eer": 0.59143862613224,
+          "lstformer_eer": 0.5631667394166824,
+          "transformer_auc": 0.4879524526165756,
+          "lstformer_auc": 0.5473617080111159,
+          "transformer_recon_gap": 0.3047237880527973,
+          "lstformer_recon_gap": 0.4529760405421257
+        },
+        {
+          "user": "857069",
+          "delta_eer": -0.08334573781879523,
+          "transformer_eer": 0.2112272268240431,
+          "lstformer_eer": 0.29457296464283833,
+          "transformer_auc": 0.8255112107361551,
+          "lstformer_auc": 0.7634216532698224,
+          "transformer_recon_gap": 0.6800063261762261,
+          "lstformer_recon_gap": 0.6736020762473345
+        },
+        {
+          "user": "861335",
+          "delta_eer": -0.2616309068939617,
+          "transformer_eer": 0.006470867850313314,
+          "lstformer_eer": 0.268101774744275,
+          "transformer_auc": 0.9912033257253857,
+          "lstformer_auc": 0.7234553386867159,
+          "transformer_recon_gap": 0.6548168677836657,
+          "lstformer_recon_gap": 0.9969392530620098
+        },
+        {
+          "user": "864651",
+          "delta_eer": 0.20898727616995572,
+          "transformer_eer": 0.4006134412288004,
+          "lstformer_eer": 0.19162616505884467,
+          "transformer_auc": 0.7093334611973514,
+          "lstformer_auc": 0.8958652993378278,
+          "transformer_recon_gap": 0.6546399295330048,
+          "lstformer_recon_gap": 0.799622930586338
+        },
+        {
+          "user": "867544",
+          "delta_eer": -0.0501694428489374,
+          "transformer_eer": 0.2371596783457783,
+          "lstformer_eer": 0.2873291211947157,
+          "transformer_auc": 0.7160310166570936,
+          "lstformer_auc": 0.7063469270534176,
+          "transformer_recon_gap": 3.633891103498172,
+          "lstformer_recon_gap": 2.075346198864281
+        },
+        {
+          "user": "876061",
+          "delta_eer": 0.267579898884854,
+          "transformer_eer": 0.5866416814336848,
+          "lstformer_eer": 0.3190617825488308,
+          "transformer_auc": 0.43484566998356605,
+          "lstformer_auc": 0.6660121699628897,
+          "transformer_recon_gap": 0.09565728902816772,
+          "lstformer_recon_gap": 0.2027888298034668
+        },
+        {
+          "user": "917826",
+          "delta_eer": 0.016984742774826755,
+          "transformer_eer": 0.6109786781495524,
+          "lstformer_eer": 0.5939939353747257,
+          "transformer_auc": 0.3803257764672373,
+          "lstformer_auc": 0.4323340102927128,
+          "transformer_recon_gap": 0.3707812777720392,
+          "lstformer_recon_gap": 0.3684514246415347
+        },
+        {
+          "user": "931304",
+          "delta_eer": 0.14548912026934346,
+          "transformer_eer": 0.26988122700916517,
+          "lstformer_eer": 0.12439210673982169,
+          "transformer_auc": 0.8967204937963713,
+          "lstformer_auc": 0.9331629153937278,
+          "transformer_recon_gap": -3.5472910404205322,
+          "lstformer_recon_gap": -3.559056282043457
+        },
+        {
+          "user": "936327",
+          "delta_eer": -0.013688536133912799,
+          "transformer_eer": 0.21667018751005954,
+          "lstformer_eer": 0.23035872364397234,
+          "transformer_auc": 0.7517050941574119,
+          "lstformer_auc": 0.7600394334460003,
+          "transformer_recon_gap": 1.658446453511715,
+          "lstformer_recon_gap": 1.9440828673541546
+        },
+        {
+          "user": "941227",
+          "delta_eer": -0.1662275987069236,
+          "transformer_eer": 0.4517695452262883,
+          "lstformer_eer": 0.6179971439332119,
+          "transformer_auc": 0.5880295296905405,
+          "lstformer_auc": 0.39755380625823866,
+          "transformer_recon_gap": 1.081707646138966,
+          "lstformer_recon_gap": 3.187359543517232
+        },
+        {
+          "user": "955036",
+          "delta_eer": 0.006977512719503545,
+          "transformer_eer": 0.12700664365728304,
+          "lstformer_eer": 0.12002913093777949,
+          "transformer_auc": 0.8909853714460452,
+          "lstformer_auc": 0.8878255732491691,
+          "transformer_recon_gap": 5.165193072069087,
+          "lstformer_recon_gap": 11.326285398274194
+        },
+        {
+          "user": "959726",
+          "delta_eer": 0.22382427725903292,
+          "transformer_eer": 0.25333219375654364,
+          "lstformer_eer": 0.02950791649751072,
+          "transformer_auc": 0.7991041858079956,
+          "lstformer_auc": 0.986937779107284,
+          "transformer_recon_gap": -3.986924946308136,
+          "lstformer_recon_gap": -3.9524500370025635
+        },
+        {
+          "user": "95977",
+          "delta_eer": -0.02157802964254585,
+          "transformer_eer": 0.3045989537925021,
+          "lstformer_eer": 0.326176983435048,
+          "transformer_auc": 0.8201721883173496,
+          "lstformer_auc": 0.6902789886660854,
+          "transformer_recon_gap": 2.091635229997337,
+          "lstformer_recon_gap": 3.1983313045930117
+        },
+        {
+          "user": "964401",
+          "delta_eer": -0.006851096910043597,
+          "transformer_eer": 0.19673426456425575,
+          "lstformer_eer": 0.20358536147429934,
+          "transformer_auc": 0.8421571407973273,
+          "lstformer_auc": 0.8310797300164863,
+          "transformer_recon_gap": 0.6031076451763511,
+          "lstformer_recon_gap": 0.6540968660265207
+        },
+        {
+          "user": "966358",
+          "delta_eer": -0.2754815687361419,
+          "transformer_eer": 0.15348704268292684,
+          "lstformer_eer": 0.4289686114190687,
+          "transformer_auc": 0.8653513026607539,
+          "lstformer_auc": 0.5901209118625277,
+          "transformer_recon_gap": 1.9161713039502501,
+          "lstformer_recon_gap": 1.903559128753841
+        }
+      ]
+    }
+  }
+}

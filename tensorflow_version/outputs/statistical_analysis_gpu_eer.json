@@ -1,0 +1,24 @@
+{
+  "lstformer_vs_lstm": {
+    "metric": "eer",
+    "n_users": 18,
+    "baseline_mean": 0.49478654470156297,
+    "proposed_mean": 0.31467209301693566,
+    "t_statistic": 4.684694854273381,
+    "p_value": 0.00021301461586834827,
+    "significant_at_0.05": true,
+    "cohens_d": -0.8186621465699374,
+    "effect_size": "large"
+  },
+  "lstformer_vs_transformer": {
+    "metric": "eer",
+    "n_users": 18,
+    "baseline_mean": 0.3496763496849662,
+    "proposed_mean": 0.31467209301693566,
+    "t_statistic": 0.9087175945234786,
+    "p_value": 0.37620233539906595,
+    "significant_at_0.05": false,
+    "cohens_d": -0.1828771488418243,
+    "effect_size": "negligible"
+  }
+}

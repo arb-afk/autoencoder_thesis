@@ -1,0 +1,47 @@
+# Python
+.venv/
+.venv312/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Datasets (too large / licensed separately — see README Section 2.0)
+clarkson-II-2018-filtered_dataset*/
+UB_keystroke_dataset.zip
+UB_mouse_and_events_dataset.zip
+*.zip
+
+# Thesis source drafts (optional local only)
+Chapter*.pdf
+pdf_extract.txt
+
+# Trained model checkpoints (regenerable; very large)
+outputs/models/
+outputs/models_window_stability/
+tensorflow_version/outputs/models/
+
+# Keep result JSONs/MDs/plots, but ignore checkpoint binaries
+*.pt
+*.pth
+*.weights.h5
+*.h5
+*.ckpt
+
+# Secrets / local env
+.env
+.env.*
+
+# Scratch helpers
+_print_ws.py
+_check_*.py
+_canon_*.py
