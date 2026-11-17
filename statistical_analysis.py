@@ -34,14 +34,12 @@ ALPHA = 0.05
 
 
 def cohens_d(a: np.ndarray, b: np.ndarray) -> float:
-    """Cohen's d for paired samples using the pooled standard deviation."""
-    n_a, n_b = len(a), len(b)
-    pooled_std = np.sqrt(
-        ((n_a - 1) * np.var(a, ddof=1) + (n_b - 1) * np.var(b, ddof=1)) / (n_a + n_b - 2)
-    )
-    if pooled_std == 0:
+    """Paired Cohen's d_z = mean(a - b) / sd(a - b)."""
+    diff = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
+    sd = diff.std(ddof=1)
+    if sd == 0 or len(diff) < 2:
         return 0.0
-    return float((np.mean(a) - np.mean(b)) / pooled_std)
+    return float(diff.mean() / sd)
 
 
 def interpret_d(d: float) -> str:

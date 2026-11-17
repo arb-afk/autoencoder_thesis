@@ -42,7 +42,6 @@ from src.evaluate import measure_inference_latency
 from src.preprocessing import (
     load_keystroke_file,
     extract_ht_ft,
-    zscore_normalize,
     sliding_windows,
 )
 from src.train import build_model
@@ -67,9 +66,19 @@ def _pick_reference_user(data_dir: Path, min_keystrokes: int = 2000) -> Path:
 
 
 def _windows_for_length(path: Path, seq_len: int) -> np.ndarray:
+    """Reference windows for latency/memory timing (not authentication eval).
+
+    Uses train-only z-score fit on the chronological 70% feature prefix for
+    consistency with the leak-free protocol; windows are built only on that
+    training portion.
+    """
+    from src.preprocessing import split_feature_sequence, zscore_apply, zscore_fit
+
     events = load_keystroke_file(path)
     features = extract_ht_ft(events)
-    normalized, _, _ = zscore_normalize(features)
+    train_f, _, _ = split_feature_sequence(features)
+    mean, std = zscore_fit(train_f if len(train_f) else features)
+    normalized = zscore_apply(train_f if len(train_f) else features, mean, std)
     stride = max(1, seq_len // 2)
     return sliding_windows(normalized, window_size=seq_len, stride=stride)
 

@@ -5,40 +5,40 @@ Restricted to the **n=81** users present in every model x N cell.
 
 ## N = 25
 
-- Mean Delta EER = **0.0426** (median 0.0113)
-- LST-Former better for **61.7%** of users (50/81)
-- Transformer better for **37.0%** (30/81)
-- Top 10% of winners account for **32.5%** of total positive Delta EER mass; top 20% -> **58.2%**
-- One-sample t-test (mean Delta > 0): p=0.003282 (sig)
-- Wilcoxon (Delta > 0): p=0.00164 (sig)
-- Mean AUC Delta (LST-F - Trans) = 0.0477
-- Mean recon-gap Delta (LST-F - Trans) = -7.4999
+- Mean Delta EER = **0.0179** (median 0.0079)
+- LST-Former better for **58.0%** of users (47/81)
+- Transformer better for **40.7%** (33/81)
+- Top 10% of winners account for **40.1%** of total positive Delta EER mass; top 20% -> **61.2%**
+- One-sample t-test (mean Delta > 0): p=0.07462 (n.s.)
+- Wilcoxon (Delta > 0): p=0.02518 (sig)
+- Mean AUC Delta (LST-F - Trans) = 0.0300
+- Mean recon-gap Delta (LST-F - Trans) = 5751.4064
 
 **Reading:** Advantage looks **concentrated** in a subset of users (top quintile of winners carries >55% of positive mass).
 
 ## N = 50
 
-- Mean Delta EER = **0.0342** (median 0.0102)
-- LST-Former better for **65.4%** of users (53/81)
-- Transformer better for **32.1%** (26/81)
-- Top 10% of winners account for **39.9%** of total positive Delta EER mass; top 20% -> **64.5%**
-- One-sample t-test (mean Delta > 0): p=0.01404 (sig)
-- Wilcoxon (Delta > 0): p=0.0009412 (sig)
-- Mean AUC Delta (LST-F - Trans) = 0.0373
-- Mean recon-gap Delta (LST-F - Trans) = 3.8140
+- Mean Delta EER = **0.0182** (median 0.0081)
+- LST-Former better for **63.0%** of users (51/81)
+- Transformer better for **35.8%** (29/81)
+- Top 10% of winners account for **43.5%** of total positive Delta EER mass; top 20% -> **68.8%**
+- One-sample t-test (mean Delta > 0): p=0.1155 (n.s.)
+- Wilcoxon (Delta > 0): p=0.02518 (sig)
+- Mean AUC Delta (LST-F - Trans) = 0.0343
+- Mean recon-gap Delta (LST-F - Trans) = 4794.0862
 
 **Reading:** Advantage looks **concentrated** in a subset of users (top quintile of winners carries >55% of positive mass).
 
 ## N = 100
 
-- Mean Delta EER = **0.0134** (median 0.0055)
-- LST-Former better for **56.8%** of users (46/81)
-- Transformer better for **42.0%** (34/81)
-- Top 10% of winners account for **35.6%** of total positive Delta EER mass; top 20% -> **65.2%**
-- One-sample t-test (mean Delta > 0): p=0.3023 (n.s.)
-- Wilcoxon (Delta > 0): p=0.1089 (n.s.)
-- Mean AUC Delta (LST-F - Trans) = 0.0116
-- Mean recon-gap Delta (LST-F - Trans) = -6.2190
+- Mean Delta EER = **0.0117** (median 0.0029)
+- LST-Former better for **53.1%** of users (43/81)
+- Transformer better for **46.9%** (38/81)
+- Top 10% of winners account for **43.8%** of total positive Delta EER mass; top 20% -> **62.2%**
+- One-sample t-test (mean Delta > 0): p=0.2471 (n.s.)
+- Wilcoxon (Delta > 0): p=0.09892 (n.s.)
+- Mean AUC Delta (LST-F - Trans) = 0.0131
+- Mean recon-gap Delta (LST-F - Trans) = -3091.0150
 
 **Reading:** Advantage looks **concentrated** in a subset of users (top quintile of winners carries >55% of positive mass).
 

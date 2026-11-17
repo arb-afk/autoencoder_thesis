@@ -24,14 +24,14 @@ sys.path.insert(0, str(ROOT))
 
 import config
 from src.evaluate import evaluate_user, measure_inference_latency
-from src.preprocessing import chronological_split, load_all_users
+from src.preprocessing import load_all_users, sample_zero_effort_impostors
 from src.train import build_model, reconstruction_errors, train_model
 
 
 def set_seed(seed: int = config.RANDOM_SEED) -> None:
     """Reproducibility (README Section 7.6): without this, re-running with
     identical config gives different EER/AUC each time from random weight
-    init, data shuffling, and imposter sampling alone."""
+    init and data shuffling alone. Impostor indices use a separate per-user RNG."""
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -42,8 +42,8 @@ def set_seed(seed: int = config.RANDOM_SEED) -> None:
 
 def run_single_user(model_name: str, user_id: str, all_users: dict, device: str) -> dict:
     """Train on one user, test with zero-effort imposters from other users."""
-    windows = all_users[user_id]
-    train, val, test = chronological_split(windows)
+    splits = all_users[user_id]
+    train, val, test = splits.train, splits.val, splits.test
 
     if len(train) < config.BATCH_SIZE:
         return {"user": user_id, "status": "skipped", "reason": "insufficient training data"}
@@ -58,21 +58,11 @@ def run_single_user(model_name: str, user_id: str, all_users: dict, device: str)
     genuine_errors = reconstruction_errors(model, test, device).numpy()
     val_errors = reconstruction_errors(model, val, device).numpy()
 
-    # Zero-effort imposter: sample windows from other users' test portions
-    imposter_windows = []
-    for other_id, other_w in all_users.items():
-        if other_id == user_id:
-            continue
-        _, _, other_test = chronological_split(other_w)
-        if len(other_test) > 0:
-            n_sample = min(len(other_test), max(10, len(test) // 5))
-            idx = np.random.choice(len(other_test), n_sample, replace=False)
-            imposter_windows.append(other_test[idx])
-
-    if not imposter_windows:
+    # Fixed per-user impostor sample (independent of training RNG; same across architectures)
+    imposter_all = sample_zero_effort_impostors(user_id, all_users, n_genuine_test=len(test))
+    if imposter_all is None:
         return {"user": user_id, "status": "skipped", "reason": "no imposter data"}
 
-    imposter_all = np.concatenate(imposter_windows, axis=0)
     imposter_errors = reconstruction_errors(model, imposter_all, device).numpy()
 
     metrics = evaluate_user(genuine_errors, imposter_errors, val_errors)

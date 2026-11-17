@@ -30,7 +30,7 @@ sys.path.insert(0, str(ROOT))
 
 import config
 from src.evaluate import evaluate_user, measure_inference_latency
-from src.preprocessing import chronological_split, load_all_users
+from src.preprocessing import load_all_users, sample_zero_effort_impostors
 from src.train import build_model, reconstruction_errors, train_model
 
 
@@ -47,14 +47,13 @@ FUSION_TYPES = ["concat", "norm_concat", "gated", "weighted_sum", "hybrid_nobott
 ALPHA = 0.05
 
 
-def cohens_d(a: np.ndarray, b: np.ndarray) -> float:
-    n_a, n_b = len(a), len(b)
-    pooled_std = np.sqrt(
-        ((n_a - 1) * np.var(a, ddof=1) + (n_b - 1) * np.var(b, ddof=1)) / (n_a + n_b - 2)
-    )
-    if pooled_std == 0:
+def paired_cohens_dz(a: np.ndarray, b: np.ndarray) -> float:
+    """Paired Cohen's d_z = mean(diff) / sd(diff)."""
+    diff = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
+    sd = diff.std(ddof=1)
+    if sd == 0 or len(diff) < 2:
         return 0.0
-    return float((np.mean(a) - np.mean(b)) / pooled_std)
+    return float(diff.mean() / sd)
 
 
 def run_variant(
@@ -67,8 +66,8 @@ def run_variant(
     """Train+evaluate LST-Former with one fusion/decoder strategy across all user_ids."""
     results = []
     for uid in user_ids:
-        windows = all_users[uid]
-        train, val, test = chronological_split(windows)
+        splits = all_users[uid]
+        train, val, test = splits.train, splits.val, splits.test
         if len(train) < config.BATCH_SIZE:
             results.append({"user": uid, "status": "skipped"})
             continue
@@ -80,20 +79,11 @@ def run_variant(
         genuine_errors = reconstruction_errors(model, test, device).numpy()
         val_errors = reconstruction_errors(model, val, device).numpy()
 
-        imposter_windows = []
-        for other_id, other_w in all_users.items():
-            if other_id == uid:
-                continue
-            _, _, other_test = chronological_split(other_w)
-            if len(other_test) > 0:
-                n_sample = min(len(other_test), max(10, len(test) // 5))
-                idx = np.random.choice(len(other_test), n_sample, replace=False)
-                imposter_windows.append(other_test[idx])
-        if not imposter_windows:
+        imposter_all = sample_zero_effort_impostors(uid, all_users, n_genuine_test=len(test))
+        if imposter_all is None:
             results.append({"user": uid, "status": "skipped"})
             continue
 
-        imposter_all = np.concatenate(imposter_windows, axis=0)
         imposter_errors = reconstruction_errors(model, imposter_all, device).numpy()
         metrics = evaluate_user(genuine_errors, imposter_errors, val_errors)
 
@@ -114,7 +104,7 @@ def paired_vs_baseline(variant_scores: dict, baseline_scores: dict, metric_name:
     a = np.array([baseline_scores[u] for u in common])
     b = np.array([variant_scores[u] for u in common])
     t_stat, p_value = stats.ttest_rel(b, a)
-    d = cohens_d(b, a)
+    d = paired_cohens_dz(b, a)
     return {
         "metric": metric_name,
         "n_users": len(common),
@@ -124,6 +114,7 @@ def paired_vs_baseline(variant_scores: dict, baseline_scores: dict, metric_name:
         "p_value": float(p_value),
         "significant_at_0.05": bool(p_value < ALPHA),
         "cohens_d": d,
+        "cohens_d_estimator": "paired_dz",
     }
 
 

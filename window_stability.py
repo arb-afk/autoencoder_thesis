@@ -35,7 +35,7 @@ sys.path.insert(0, str(ROOT))
 
 import config
 from src.evaluate import evaluate_user, measure_inference_latency
-from src.preprocessing import chronological_split, load_all_users
+from src.preprocessing import load_all_users, sample_zero_effort_impostors
 from src.train import build_model, reconstruction_errors, train_model
 
 
@@ -56,8 +56,8 @@ def run_single_user(
     seq_len: int,
     save_root: Path,
 ) -> dict:
-    windows = all_users[user_id]
-    train, val, test = chronological_split(windows)
+    splits = all_users[user_id]
+    train, val, test = splits.train, splits.val, splits.test
 
     if len(train) < config.BATCH_SIZE:
         return {"user": user_id, "status": "skipped", "reason": "insufficient training data"}
@@ -71,20 +71,10 @@ def run_single_user(
     genuine_errors = reconstruction_errors(model, test, device).numpy()
     val_errors = reconstruction_errors(model, val, device).numpy()
 
-    imposter_windows = []
-    for other_id, other_w in all_users.items():
-        if other_id == user_id:
-            continue
-        _, _, other_test = chronological_split(other_w)
-        if len(other_test) > 0:
-            n_sample = min(len(other_test), max(10, len(test) // 5))
-            idx = np.random.choice(len(other_test), n_sample, replace=False)
-            imposter_windows.append(other_test[idx])
-
-    if not imposter_windows:
+    imposter_all = sample_zero_effort_impostors(user_id, all_users, n_genuine_test=len(test))
+    if imposter_all is None:
         return {"user": user_id, "status": "skipped", "reason": "no imposter data"}
 
-    imposter_all = np.concatenate(imposter_windows, axis=0)
     imposter_errors = reconstruction_errors(model, imposter_all, device).numpy()
     metrics = evaluate_user(genuine_errors, imposter_errors, val_errors)
 
@@ -283,6 +273,12 @@ def main():
     )
     parser.add_argument("--max-users", type=int, default=96)
     parser.add_argument(
+        "--users-file",
+        type=Path,
+        default=None,
+        help="Optional text file of user IDs (one per line). Overrides --max-users prefix.",
+    )
+    parser.add_argument(
         "--lengths",
         type=int,
         nargs="+",
@@ -302,6 +298,11 @@ def main():
         default=None,
         help="JSON output path (default: outputs/window_stability.json)",
     )
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="Ignore any existing output JSON and start a new matrix.",
+    )
     args = parser.parse_args()
 
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
@@ -312,7 +313,7 @@ def main():
 
     config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     all_results: dict = {}
-    if out_path.exists():
+    if out_path.exists() and not args.fresh:
         with open(out_path) as f:
             all_results = json.load(f)
 
@@ -320,14 +321,30 @@ def main():
     print(f"Window lengths: {lengths}")
     print(f"Models: {args.models}")
     print(f"Max users: {args.max_users}")
+    print("Protocol: leak-free split → train-only z-score → per-partition windows")
 
     for seq_len in lengths:
         print(f"\n{'#' * 60}")
         print(f"# Loading users at window_size={seq_len} (50% overlap stride)")
         print(f"{'#' * 60}")
         all_users = load_all_users(config.DATA_DIR, window_size=seq_len)
-        user_ids = list(all_users.keys())[: args.max_users]
-        print(f"Loaded {len(all_users)} users with >=1 window; using first {len(user_ids)}")
+        if args.users_file:
+            requested = [
+                line.strip()
+                for line in args.users_file.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
+            user_ids = [u for u in requested if u in all_users]
+            missing = [u for u in requested if u not in all_users]
+            print(
+                f"Loaded {len(all_users)} users; using {len(user_ids)} from "
+                f"{args.users_file.name} ({len(missing)} missing at N={seq_len})"
+            )
+        else:
+            user_ids = list(all_users.keys())[: args.max_users]
+            print(
+                f"Loaded {len(all_users)} users with >=1 window; using first {len(user_ids)}"
+            )
 
         for model_name in args.models:
             cell_key = f"{model_name}_N{seq_len}"

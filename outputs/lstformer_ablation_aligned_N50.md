@@ -1,11 +1,9 @@
-# LST-Former Fusion Ablation Study
+# LST-Former Fusion Ablation Study (leak-free)
 
-Investigates alternative fusion strategies for combining the LSTM and
-Transformer branches, since the original concat+Dense fusion did not
-outperform a standalone Transformer (see README Section 7).
+N=50, n=81, train-only z-score / per-partition windows.
 
 | Fusion type | n | Mean EER | Mean AUC | vs LSTM (EER, p) | vs Transformer (EER, p) |
 |---|---|---|---|---|---|
-| concat | 81 | 0.4481 | 0.5165 | p=0.3320 | p=0.0000 |
-| local_injection | 81 | 0.3406 | 0.6874 | p=0.0000 | p=0.7431 |
-| hybrid_nobottleneck | 81 | 0.3251 | 0.7121 | p=0.0000 | p=0.1609 |
+| concat | 81 | 0.4581 | 0.5113 | p=0.0827 | p=0.0000 |
+| local_injection | 81 | 0.3547 | 0.6553 | p=0.0000 | p=0.3590 |
+| hybrid_nobottleneck | 81 | 0.3228 | 0.7033 | p=0.0000 | p=0.0516 |
